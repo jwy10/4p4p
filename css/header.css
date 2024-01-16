@@ -1,0 +1,34 @@
+#header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.inner-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.menu-list {
+    list-style: none;
+}
+li {
+    float: left;
+    margin: 0px 10px 0px;
+}
+.menu-wrap {
+    margin-right: 120px;
+    /* 단위 px로 해야할지? */
+}
+.logo {
+    margin-left: 120px;
+}
+
+.fullpate-wrapper {
+    font-family: Pretendard, AppleSDGothicNeo, 'Malgun Gothic', sans-serif;
+}
