@@ -4,9 +4,10 @@
 }
 
 .title {
-    margin-top: 30vh;
+    /* title 크기 바뀐만큼 container1 사이즈 조절하기 */
+    margin-top: 22%; 
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
 }
 
 .store-wrap {
