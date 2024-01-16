@@ -6,12 +6,13 @@
 .title {
     margin-top: 30vh;
     display: flex;
+    justify-content: center;
 }
 
 .store-wrap {
     display: flex;
     justify-content: center;
-    margin-top: 50vh;
+    margin-top: 30vh;
 }
 
 .google {
