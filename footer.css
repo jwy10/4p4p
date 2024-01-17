@@ -1,6 +1,5 @@
-.container {
+container {
     display: flex;
-    justify-content: space-between;
 }
 .size1 {
     font-size: 20px;
@@ -43,6 +42,25 @@ span {
 body {
     background-color: #f4fcfc;
 }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+body {
+    background-color: white;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+}
 footer {
     position: absolute;
     bottom: 0;
@@ -52,7 +70,6 @@ footer {
     height: auto;
     width: 100vw;
     font-family: 'Open Sans';
-    padding-top: 30px;
     color: black;
 }
 .footer-content {
