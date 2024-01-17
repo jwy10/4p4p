@@ -1,0 +1,13 @@
+.downImg {
+    animation: floating 0.6s ease-out 5s infinite alternate;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0.8rem);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
