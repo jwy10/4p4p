@@ -1,0 +1,24 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+body::-webkit-scrollbar {display: none;}
+.chg_cnt {display: flex; justify-content: center; align-items: center; width: 100%; background-color: #f2f8ff; font-family: Pretendard;}
+.chg_cnt .txt_wrap {line-height: 1.2; font-weight: 700;}
+.chg_cnt .txt_wrap .sub_tit {font-size: 20px; font-weight: 700;}
+.chg_cnt .txt_wrap .str_tit {display: block; margin-top: 40px; font-size: 68px; line-height: 1.2; letter-spacing: -0.4rem; font-weight: 800;}
+.chg_cnt .txt_wrap .str_tit span {color: #748bff;} 
+.chg_cnt .txt_wrap .txt_cnt {margin-top: 30px; font-size: 18px; line-height: 1.6; letter-spacing: 0.2; font-weight: 400; color: #666;}
+
+.chg_cnt ul {display: flex; flex-wrap: wrap; justify-content: center; width: 50%;}
+.chg_cnt ul li {position: relative; padding: 4% 4% 5%; margin: 0 0 0 30px; width: 45%; max-width: 245px; min-width: 180px; height: 45%; border-radius: 20px;}
+.chg_cnt ul li:nth-child(even) {margin: 80px 0 0 30px;}
+.chg_cnt ul li:nth-child(1){background-color: #758aff;}
+.chg_cnt ul li:nth-child(2) {background-color: #ffda64;}
+.chg_cnt ul li:nth-child(3) {margin-top: -55px; background-color: #61c9ac;}
+.chg_cnt ul li:nth-child(4){margin-top: 25px; background-color: #b8afff;}
+.chg_cnt ul li div {font-weight: 500;}
+.chg_cnt ul li:hover {transform: scale(1.05); transition: all 0.3s;}
+.chg_cnt ul li div p {margin-top: 15px;}
+.chg_cnt ul li div img {position: relative; left: 50%; transform: translateX(-50%); width: 90%;}
+.chg_cnt ul li div strong {display: flex; align-items: center; margin: 15px 0; font-size: 24px; font-weight: 900;}
+.chg_cnt ul li div strong span {font-size: 18px; font-weight: 600;}
+.chg_cnt ul li div strong i.coin:after {content: ''; display: inline-block; margin: 0 2px; width: 25px; height: 25px; background: url('../img/coin.png')center center/100% no-repeat;} 
