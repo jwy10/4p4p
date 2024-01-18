@@ -1,0 +1,60 @@
+.bottom-wrap {
+    display: flex;
+    background-color: yellowgreen;
+    width: 20vw;
+    height: 20vh;
+    position: absolute;
+    z-index: 0;
+}
+
+.anibox-bottom1 {
+    background-color: pink;
+    margin-top: 30%;
+    width: 26rem;
+    height: 26rem;
+    margin: 0% 30% 0%;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-play-state: running;
+    animation-name: hearts;
+    -webkit-animation-name: hearts;
+}
+
+@keyframes hearts {
+    0% {
+        transform: rotate(20deg);
+        opacity: 0;
+    }
+    50% {
+        transform: rotate(-20deg);
+        opacity: 1;
+    }
+    100% {
+        top: 60px;
+        transform: rotate(20deg);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes hearts {
+    0% {
+        transform: rotate(20deg);
+        opacity: 0;
+    }
+    50% {
+        transform: rotate(-20deg);
+        opacity: 1;
+    }
+    100% {
+        top: 60px;
+        transform: rotate(20deg);
+        opacity: 0;
+    }
+}
