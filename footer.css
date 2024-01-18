@@ -9,7 +9,7 @@ container {
     display: flex;
     width: 100%;
     justify-content: space-around;
-    background-color: #f4fcfc;
+    background-color: white;
 }
 .item {
     /* width: 400px; */
@@ -46,8 +46,9 @@ span {
     box-sizing: border-box;
 }
 body {
+    width: auto;
     min-height: 100vh;
-    background-color: #f4fcfc;
+    background-color: #d4dce4;
     background-size: cover;
     background-position: center;
 }
@@ -161,4 +162,39 @@ footer {
     justify-content: space-between;
     align-items: center;
     z-index: 10;
+}
+.main2 {
+    background-color: white;
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.main3 {
+    background-color: white;
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+.main2 .logo2 {
+    left: 10px;
+    position: absolute;
+}
+.main2 .logo3 {
+    right: 40px;
+    position: absolute;
+}
+.main3 .logo4 {
+    left: 10px;
+    position: absolute;
+}
+.main3 .logo5 {
+    right: 30px;
+    position: absolute;
+}
+.underline1 {
+    text-decoration: underline;
 }
