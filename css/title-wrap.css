@@ -37,14 +37,13 @@
 .content-wrap {
     position: relative;
 }
-.title {
+/* .title {
     position: relative;
-    margin-top: 17vh;
     display: flex;
     justify-content: center;
     font-weight: 900;
     text-align: center;
-}
+} */
 .big-tit01 {
     font-size: 70px;
     text-decoration: underline;
