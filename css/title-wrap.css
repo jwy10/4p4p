@@ -1,14 +1,3 @@
-.title-cloud {
-    width: 4vw;
-    height: 5vh;
-    object-fit: fill;
-}
-.title-sun {
-    width: 5vw;
-    height: 6vh;
-    object-fit: fill;
-    border-radius: 50%;
-}
 
 /* .sunshine {
     position: absolute;
@@ -59,7 +48,7 @@
     font-size: 35px;
     word-spacing: -5px;
     /* title 크기 바뀐만큼 container1 사이즈 조절하기 - 수정된 길이 16.3% */
-    margin-top: 5vh;
+    top: 5vh;
     white-space: nowrap;
     text-overflow: ellipsis;
     position: relative;
@@ -67,9 +56,10 @@
 
 .store-wrap {
     display: flex;
-    justify-content: center;
-    position: relative;
-    margin-top: 13vh;
+    align-items: center;
+    position: absolute;
+    top: 60vh;
+    left: 33vw;
 }
 
 .google {
@@ -83,13 +73,14 @@
     border-radius: 20px;
     line-height: 10vh;
     display: flex;
+    color: black;
     justify-content: center;
 }
 .googleImg {
     width: 2.5vw;
-    height: 4vh;
+    height: 5vh;
     position: relative;
-    top: 1em;
+    top: 2.5vh;
 }
 
 .google:hover {
@@ -97,7 +88,7 @@
     color: white;
 }
 .apple {
-    margin-right: 1vw;
+    margin-right: 0vw;
     width: 15vw;
     height: 10vh;
     border: 0.12em solid;
@@ -108,6 +99,7 @@
     line-height: 10vh;
     display: flex;
     justify-content: center;
+    color:black;
 }
 .appleImg {
     width: 2.5vw;
@@ -127,7 +119,7 @@
     height: 6vh;
     position: fixed;
     object-fit: fill;
-    margin-top: 13%;
+    top: 11vh;
     display: flex;
     justify-content: center;
 }
