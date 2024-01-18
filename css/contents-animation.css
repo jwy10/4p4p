@@ -20,7 +20,7 @@
     animation-play-state: running;
     animation-name: hearts;
     -webkit-animation-name: hearts;
-    border-radius: 50%;
+    border-radius: 55%;
     transform: rotate(-45deg);
     transform-origin: 0 100%;
     transform-origin: 100% 100%;
