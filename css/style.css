@@ -307,9 +307,10 @@ container {
     text-align: center;
     border-radius: 5%;
 }
-span {
+span:not(.txt){
     color: #8e9fe3;
 }
+/* not 선택자 추가 */
 
 .line1 {
     text-decoration: underline;

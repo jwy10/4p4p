@@ -1,8 +1,5 @@
 
 /* .sunshine {
-    position: absolute;
-    width: 50px;
-    height: 50px;
     background: linear-gradient(
         120deg,
         rgb(240, 215, 72),
@@ -35,17 +32,17 @@
     text-align: center;
 }
 .big-tit01 {
-    font-size: 70px;
+    font-size: 5rem;
     text-decoration: underline;
     word-spacing: -6px;
 }
 .big-tit02 {
-    font-size: 70px;
+    font-size: 5rem;
     text-decoration: underline;
     word-spacing: -5px;
 }
 .big-tit03 {
-    font-size: 35px;
+    font-size: 2.5rem;
     word-spacing: -5px;
     /* title 크기 바뀐만큼 container1 사이즈 조절하기 - 수정된 길이 16.3% */
     top: 5vh;
@@ -56,10 +53,10 @@
 
 .store-wrap {
     display: flex;
-    align-items: center;
+    justify-content: center;
     position: absolute;
-    top: 60vh;
-    left: 33vw;
+    top: 57%;
+    left: 33%;
 }
 
 .google {
@@ -119,7 +116,6 @@
     height: 6vh;
     position: fixed;
     object-fit: fill;
-    top: 11vh;
-    display: flex;
-    justify-content: center;
+    top: 70vh;
+    left: 46.5vw;
 }
