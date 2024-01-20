@@ -205,6 +205,26 @@
     animation-delay: 2s;
 }
 
+.chg_cnt ul li.ani01 {
+    -webkit-animation: transY .5s .5s both;
+    animation: transY .5s .5s both
+}
+
+.chg_cnt ul li.ani02 {
+    -webkit-animation: transY .5s .7s both;
+    animation: transY .5s .7s both
+}
+
+.chg_cnt ul li.ani03 {
+    -webkit-animation: transY .5s .9s both;
+    animation: transY .5s .9s both
+}
+
+.chg_cnt ul li.ani04 {
+    -webkit-animation: transY .5s 1.1s both;
+    animation: transY .5s 1.1s both
+}
+
 @-webkit-keyframes transY {
     0% {
         opacity: 0;
