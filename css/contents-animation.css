@@ -1,48 +1,516 @@
-.bottom-wrap {
+.anibox-bottom1 {
     display: flex;
-    background-color: yellowgreen;
-    width: 20vw;
-    height: 20vh;
-    position: absolute;
-    z-index: 0;
 }
-
 #sunShape {
-    background: linear-gradient(tomato, orange);
-    margin-top: 30%;
-    width: 26rem;
-    height: 26rem;
-    margin: 0% -30% 0%;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
+    background: linear-gradient(tomato, gold, tomato);
+    top: -320%;
+    right: 5%;
+    width: 30vw;
+    height: 45vh;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-play-state: running;
-    animation-name: hearts;
-    -webkit-animation-name: hearts;
-    border-radius: 55%;
-    transform: rotate(-45deg);
-    transform-origin: 0 100%;
-    transform-origin: 100% 100%;
+    animation-name: sunrise;
+    animation-delay: 0s;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 1;
 }
 
-@keyframes hearts {
+@keyframes sunrise {
     0% {
-        transform: rotate(-90deg);
-        opacity: 0.2;
+        top: 100%;
+        transform: translate3d(-600%, -520%, 50em);
+        opacity: 1;
     }
     50% {
-        transform: rotate(20deg);
-        opacity: 0.7;
+        top: -100%;
+        opacity: 0.5;
     }
     100% {
-        top: 60px;
-        transform: rotate(20deg);
-        opacity: 0;
-        display: noneg;
+        top: -320%;
+        opacity: 0.9;
     }
 }
 
+.anibox-bottom2 {
+    background-size: 11.5rem auto;
+    animation: scale-shape 5s 1s ease-in-out 1 both;
+    animation-delay: 1s;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running;
+    animation-name: scale-shape;
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal;
+    position: absolute;
+    top: -100%;
+    right: 50%;
+}
+.bling1 {
+    width: 8vw;
+    height: 14vh;
+    position: absolute;
+    left: 0vw;
+    top: -5vh;
+}
+.bling2 {
+    width: 3vw;
+    height: 5vh;
+    animation: scale-shape 5s 2s ease-in-out 1 both;
+    position: absolute;
+    left: 10vw;
+    top: 0vh;
+}
+.bling3 {
+    width: 5vw;
+    height: 8vh;
+    animation: scale-shape 5s 3s ease-in-out 1 both;
+    position: absolute;
+    left: 10vw;
+    top: -10vh;
+}
+
+@keyframes scale-shape {
+    0% {
+        opacity: 0;
+        transform: translate3d(-30%, -101%, 50em);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.bottom-wrap {
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.anibox-bottom3 {
+    background-size: 7.6em auto;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100%;
+    position: absolute;
+    display: block;
+    top: 8vh;
+    left: 6vw;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(90, 30, 14);
+    animation: random-shape 3s 1s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
+}
+.badgeImg {
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+}
+
+.shape-wrap-left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.anibox-bottom3::hover {
+    /* 마우스 호버시 나타나는 색상 */
+    color: #b99411;
+
+    /*속도조절 */
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 0.3) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 5s infinite;
+}
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+ {
+}
+.shape-ani01:hover {
+    /* 마우스 호버시 나타나는 색상 */
+    color: #b99411;
+
+    /*속도조절 */
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 0.3) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 5s infinite;
+}
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+
+.shape-ani02:hover {
+    /* 마우스 호버시 나타나는 색상 */
+    color: #b99411;
+
+    /*속도조절 */
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 0.3) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 5s infinite;
+}
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+.shape-ani03:hover {
+    /* 마우스 호버시 나타나는 색상 */
+    color: #b99411;
+
+    /*속도조절 */
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 0.3) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 5s infinite;
+}
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+.shape-ani04:hover {
+    /* 마우스 호버시 나타나는 색상 */
+    color: #b99411;
+
+    /*속도조절 */
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 0.3) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 5s infinite;
+}
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+.shape-ani05:hover {
+    /* 마우스 호버시 나타나는 색상 */
+    color: #b99411;
+
+    /*속도조절 */
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 0.3) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 5s infinite;
+}
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+.shape-wrap-left [class*='shape-'] {
+    position: absolute;
+    display: block;
+    overflow: hidden;
+}
+.shape-wrap-right [class*='shape-'] {
+    position: absolute;
+    display: block;
+    overflow: hidden;
+}
+.shape-ani01 {
+    left: 0;
+    bottom: -5rem;
+    background-color: #f1a33e;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 0 100% 100% 0;
+    animation: random-shape01 3s 2s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
+}
+
+.shape-ani02 {
+    left: 17rem;
+    bottom: -13rem;
+    background-color: hsl(51, 100%, 73%);
+    width: 5rem;
+    height: 14rem;
+    border-radius: 4rem;
+    position: absolute;
+    animation: random-shape02 3s 2s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
+}
+
+.shape-ani03 {
+    left: 0rem;
+    bottom: 2rem;
+    outline: 0.1rem solid rgba(0, 0, 0, 0);
+    background-color: #f9632b;
+    width: 5.2rem;
+    height: 5.2rem;
+    border-radius: 100% 100% 0 100%;
+    -webkit-animation: random-shape03 3s 1s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
+}
+.shape-ani04 {
+    overflow: visible;
+    position: relative;
+    left: 11rem;
+    bottom: -11rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    animation: 3s cubic-bezier(1, -0.015, 0.155, 0.995) 1s infinite alternate none running random-shape04;
+    background-color: rgb(132, 63, 38);
+}
+
+.shape-ani05 {
+    left: 17rem;
+    bottom: -13rem;
+    background-color: hsl(51, 100%, 73%);
+    width: 5rem;
+    height: 14rem;
+    border-radius: 4rem;
+    position: absolute;
+    animation: random-shape02 3s 2s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
+}
+
+@keyframes random-shape {
+    0% {
+        border-radius: 100% 100% 0 100%;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        border-radius: 4rem;
+        transform: rotate(90deg);
+    }
+
+    100% {
+        border-radius: 100%;
+        transform: rotate(180deg);
+    }
+}
+
+@-webkit-keyframes random-shape02 {
+    0% {
+        border-radius: 100%;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        border-radius: 4rem;
+        transform: rotate(90deg);
+    }
+
+    100% {
+        border-radius: 100%;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes random-shape03 {
+    0% {
+        border-radius: 4rem;
+    }
+
+    50% {
+        border-radius: 0 100% 100% 100%;
+        transform: rotate(90deg);
+    }
+
+    100% {
+        border-radius: 4rem;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes random-shape04 {
+    0% {
+        border-radius: 100% 100% 0 100%;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        border-radius: 4rem;
+    }
+
+    100% {
+        border-radius: 100%;
+    }
+}
+
+.shape-wrap-right {
+    left: 9rem;
+    position: absolute;
+    top: 8rem;
+}
+.shape-ani06 {
+    left: 76rem;
+    bottom: -12.5rem;
+    background-color: #12485c;
+    width: 10.1rem;
+    height: 10.5rem;
+    border-radius: 9.6rem 9.6rem 0 0;
+    animation: random-shape 3s 1s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
+}
+.shape-ani07 {
+    right: -68rem;
+    bottom: -12rem;
+    background-color: hsl(239, 47%, 53%);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 4rem;
+    animation: random-shape03 3s 1s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
+}
+.shape-ani08 {
+    right: -84.5rem;
+    bottom: -1rem;
+    background-color: hsl(230, 83%, 53%);
+    width: 5rem;
+    height: 14rem;
+    border-radius: 4rem;
+    position: absolute;
+    animation: bounce-shape 2s linear infinite both;
+}
+
+.shape-ani09 {
+    right: -75rem;
+    bottom: -10rem;
+    background-color: hsl(288, 46%, 23%);
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+    animation: random-shape03 2s linear infinite both;
+}
+
+@keyframes bounce-shape {
+    0% {
+        transform: rotate(0);
+    }
+
+    33.3% {
+        transform: rotate(5deg);
+    }
+
+    66.6% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+.shape-ani06:hover {
+    /* 마우스 호버시 나타나는 색상 */
+    color: hsl(185, 100%, 50%);
+
+    /*속도조절 */
+    mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 9) 70%);
+    mask-size: 200%;
+    animation: shine 5s infinite;
+}
+@keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+
+.shape-ani07:hover {
+    /* 마우스 호버시 나타나는 색상 */
+    color: hsl(185, 100%, 50%);
+
+    /*속도조절 */
+    mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 9) 70%);
+    mask-size: 200%;
+    animation: shine 5s infinite;
+}
+@keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+.shape-ani08:hover {
+    /* 마우스 호버시 나타나는 색상 */
+    color: black;
+
+    /*속도조절 */
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 0.3) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 5s infinite;
+}
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+.shape-ani09:hover {
+    /* 마우스 호버시 나타나는 색상 */
+    color: navy;
+
+    /*속도조절 */
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 0.3) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 5s infinite;
+}
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+
+@keyframes blink-1 {
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+        transform: translateY(-1.5rem) scale(0.8);
+    }
+
+    25%,
+    75% {
+        opacity: 0.6;
+        transform: translateY(1.5rem) scale(2.2);
+    }
+}
+
+@keyframes blink-2 {
+    0%,
+    50%,
+    100% {
+        opacity: 0.6;
+        transform: translateY(1.5rem) scale(2.2);
+    }
+
+    25%,
+    75% {
+        opacity: 1;
+        transform: translateY(-1.5rem) scale(0.8);
+    }
+}
+
+/*
 @-webkit-keyframes hearts {
     0% {
         transform: rotate(20deg);
@@ -57,14 +525,14 @@
         transform: rotate(20deg);
         opacity: 0;
     }
-}
+} */
 
-#heartShape {
+/* #heartShape {
     #heartShape {
         position: absolute;
         width: 30rem;
         height: 30rem;
-        border-radius: 50px 50px 0 0;
+        border-radius: 50% 50% 0 0;
         transform: rotate(-45deg);
         transform-origin: 0 100%;
         transform: rotate(45deg);
@@ -88,4 +556,4 @@
         transform: rotate(45deg);
         transform-origin: 100% 100%;
     }
-}
+} */
