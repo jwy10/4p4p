@@ -35,6 +35,10 @@
     }
 }
 
+.bottom-wrap{
+    position: absolute;
+    bottom:50vh;
+}
 .anibox-bottom2 {
     background-size: 11.5rem auto;
     animation: scale-shape 5s 1s ease-in-out 1 both;
@@ -84,12 +88,6 @@
     }
 }
 
-.bottom-wrap {
-    position: absolute;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 .anibox-bottom3 {
     background-size: 7.6em auto;
     width: 7rem;
@@ -113,7 +111,7 @@
 .shape-wrap-left {
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 
 }
 
 .anibox-bottom3::hover {

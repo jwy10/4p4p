@@ -40,7 +40,7 @@ body {
     z-index: 3;
     left: 0;
     right: 0;
-    height: 10rem;
+   
 }
 .inner-wrap {
     display: flex;
@@ -61,54 +61,12 @@ li {
 }
 
 /* 메인 */
-.title-cloud {
-    width: 4vw;
-    height: 5vh;
-    object-fit: fill;
-}
-.title-sun {
-    width: 5vw;
-    height: 6vh;
-    object-fit: fill;
-    border-radius: 50%;
-}
 
 /* .sunshine {position: absolute;width: 50px;height: 50px;background: linear-gradient(    120deg,    rgb(240, 215, 72),    yellow,    white,    rgb(240, 215, 72),    yellow,    white,    rgb(240, 215, 72),    yellow,    white,    rgb(240, 215, 72),    yellow,    white); opacity: 0.35; display: inline-block; border-color: yellow; border-radius: 20px 20px 20px 0px;} */
-.content-wrap {
-    position: relative;
-}
-.title {
-    position: relative;
-    margin-top: 17vh;
-    display: flex;
-    justify-content: center;
-    font-weight: 900;
-    text-align: center;
-}
-.big-tit01 {
-    font-size: 70px;
-    text-decoration: underline;
-    word-spacing: -6px;
-}
-.big-tit02 {
-    font-size: 70px;
-    text-decoration: underline;
-    word-spacing: -5px;
-}
-.big-tit03 {
-    font-size: 35px;
-    word-spacing: -5px; /* title 크기 바뀐만큼 container1 사이즈 조절하기 - 수정된 길이 16.3% */
-    margin-top: 5vh;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    position: relative;
-}
-.store-wrap {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    margin-top: 13vh;
-}
+
+
+
+
 
 .google {
     margin-right: 1vw;
@@ -153,16 +111,6 @@ li {
     color: white;
 }
 
-/* 화살표 */
-.downImg {
-    width: 5vw;
-    height: 6vh;
-    position: fixed;
-    object-fit: fill;
-    margin-top: 9%;
-    display: flex;
-    justify-content: center;
-}
 
 /* ==================================================================================================================================================== */
 
