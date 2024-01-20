@@ -1,19 +1,5 @@
-.title-cloud {
-    width: 4vw;
-    height: 5vh;
-    object-fit: fill;
-}
-.title-sun {
-    width: 5vw;
-    height: 6vh;
-    object-fit: fill;
-    border-radius: 50%;
-}
 
 /* .sunshine {
-    position: absolute;
-    width: 50px;
-    height: 50px;
     background: linear-gradient(
         120deg,
         rgb(240, 215, 72),
@@ -37,29 +23,28 @@
 .content-wrap {
     position: relative;
 }
-.title {
+/* .title {
     position: relative;
-    margin-top: 17vh;
     display: flex;
     justify-content: center;
     font-weight: 900;
     text-align: center;
-}
+} */
 .big-tit01 {
-    font-size: 70px;
+    font-size: 5rem;
     text-decoration: underline;
     word-spacing: -6px;
 }
 .big-tit02 {
-    font-size: 70px;
+    font-size: 5rem;
     text-decoration: underline;
     word-spacing: -5px;
 }
 .big-tit03 {
-    font-size: 35px;
+    font-size: 2.5rem;
     word-spacing: -5px;
     /* title 크기 바뀐만큼 container1 사이즈 조절하기 - 수정된 길이 16.3% */
-    margin-top: 5vh;
+    top: 5vh;
     white-space: nowrap;
     text-overflow: ellipsis;
     position: relative;
@@ -68,8 +53,9 @@
 .store-wrap {
     display: flex;
     justify-content: center;
-    position: relative;
-    margin-top: 13vh;
+    position: absolute;
+    top: 57%;
+    left: 33%;
 }
 
 .google {
@@ -83,13 +69,14 @@
     border-radius: 20px;
     line-height: 10vh;
     display: flex;
+    color: black;
     justify-content: center;
 }
 .googleImg {
     width: 2.5vw;
-    height: 4vh;
+    height: 5vh;
     position: relative;
-    top: 1em;
+    top: 2.5vh;
 }
 
 .google:hover {
@@ -97,7 +84,7 @@
     color: white;
 }
 .apple {
-    margin-right: 1vw;
+    margin-right: 0vw;
     width: 15vw;
     height: 10vh;
     border: 0.12em solid;
@@ -108,6 +95,7 @@
     line-height: 10vh;
     display: flex;
     justify-content: center;
+    color:black;
 }
 .appleImg {
     width: 2.5vw;
@@ -127,7 +115,6 @@
     height: 6vh;
     position: fixed;
     object-fit: fill;
-    margin-top: 13%;
-    display: flex;
-    justify-content: center;
+    top: 70vh;
+    left: 46.5vw;
 }
