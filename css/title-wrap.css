@@ -21,34 +21,39 @@
 } */
 .contents-wrap {
     position: relative;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 100%;
 }
 .title {
-    padding: 100px;
-    position: relative;
+    font-size: 7.9rem;
+    line-height: 11.2rem;
+    font-weight: 800;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    font-weight: 900;
-    text-align: center;
 }
+
 .big-tit01 {
-    font-size: 5rem;
+    font-size: 7.9rem;
     text-decoration: underline;
     word-spacing: -6px;
 }
 .big-tit02 {
-    font-size: 5rem;
+    font-size: 7.9rem;
     text-decoration: underline;
     word-spacing: -5px;
+    text-align: center;
 }
 .big-tit03 {
-    font-size: 2.5rem;
-    word-spacing: -5px;
-    /* title 크기 바뀐만큼 container1 사이즈 조절하기 - 수정된 길이 16.3% */
-    top: 5vh;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    position: relative;
+    opacity: 0.9;
+    margin-top: 4.7rem;
+    font-size: 3.7rem;
+    line-height: 5.3rem;
+    font-weight: 800;
+    text-align: center;
 }
 
 .store-wrap {
@@ -57,12 +62,7 @@
     font-size: 10px;
     /* 부모요소 폰트 사이즈 지정 */
     position: relative;
-    bottom: -20vh;
-}
-@media screen and(max-width:965px) {
-    .store-wrap {
-        font-size: 1em;
-    }
+    margin-top: 8rem;
 }
 
 .google {
@@ -118,10 +118,76 @@
 
 /* 화살표 */
 .downImg {
-    width: 5vw;
-    height: 6vh;
+    content: '';
     position: fixed;
-    object-fit: fill;
-    top: 70vh;
-    left: 46.5vw;
+    bottom: -9rem;
+    left: calc(50% - 3.2rem);
+    width: 6.4rem;
+    height: 6.4rem;
+}
+
+.store-wrap [class*='btn-'] {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 23rem;
+    height: 7.5rem;
+    border-radius: 2.8rem;
+    border: 0.3rem solid #111;
+    background-color: #fff;
+}
+
+.store-wrap [class*='btn-']:hover {
+    background-color: #000;
+    border-color: #000;
+    -webkit-box-shadow: 0 1.2rem 3rem rgba(116, 139, 255, 0.18);
+    box-shadow: 0 1.2rem 3rem rgba(116, 139, 255, 0.18);
+}
+
+.store-wrap [class*='btn-']:hover span {
+    color: #fff;
+}
+
+.store-wrap [class*='btn-'] span {
+    position: relative;
+    padding-left: 3.8rem;
+    display: inline-block;
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.store-wrap [class*='btn-'] span:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 2.8rem;
+    height: 3.1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.store-wrap [class*='btn-'].btn-google span:before {
+    background-image: url('../img/google-store.png');
+    background-size: 2.6rem auto;
+}
+
+.store-wrap [class*='btn-'].btn-apple span:before {
+    background-image: url('../img/apple-store.png');
+    background-size: 2.8rem auto;
+}
+
+.store-wrap [class*='btn-'] ~ [class*='btn-'] {
+    margin-left: 2.7rem;
 }

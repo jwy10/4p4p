@@ -3,8 +3,8 @@
 }
 #sunShape {
     background: linear-gradient(tomato, gold, tomato);
-    top: -320%;
-    right: 5%;
+    top: -251%;
+    right: 186%;
     width: 30vw;
     height: 45vh;
     animation-duration: 2s;
@@ -22,7 +22,7 @@
 @keyframes sunrise {
     0% {
         top: 100%;
-        transform: translate3d(-600%, -520%, 50em);
+        transform: translate3d(-500%, -1020%, 50em);
         opacity: 1;
     }
     50% {
@@ -35,9 +35,9 @@
     }
 }
 
-.bottom-wrap{
+.bottom-wrap {
     position: absolute;
-    bottom:50vh;
+    bottom: 50vh;
 }
 .anibox-bottom2 {
     background-size: 11.5rem auto;
@@ -110,8 +110,9 @@
 
 .shape-wrap-left {
     position: absolute;
-    left: 0;
-    bottom: 
+    left: 0em;
+    bottom: 11em;
+    height: 10em;
 }
 
 .anibox-bottom3::hover {
@@ -131,8 +132,7 @@
         -webkit-mask-position: -50%;
     }
 }
- {
-}
+
 .shape-ani01:hover {
     /* 마우스 호버시 나타나는 색상 */
     color: #b99411;
@@ -233,8 +233,8 @@
     left: 0;
     bottom: -5rem;
     background-color: #f1a33e;
-    width: 6rem;
-    height: 6rem;
+    width: 20rem;
+    height: 20rem;
     border-radius: 0 100% 100% 0;
     animation: random-shape01 3s 2s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
 }
@@ -243,8 +243,8 @@
     left: 17rem;
     bottom: -13rem;
     background-color: hsl(51, 100%, 73%);
-    width: 5rem;
-    height: 14rem;
+    width: 10rem;
+    height: 28rem;
     border-radius: 4rem;
     position: absolute;
     animation: random-shape02 3s 2s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
@@ -252,11 +252,11 @@
 
 .shape-ani03 {
     left: 0rem;
-    bottom: 2rem;
+    bottom: 10rem;
     outline: 0.1rem solid rgba(0, 0, 0, 0);
     background-color: #f9632b;
-    width: 5.2rem;
-    height: 5.2rem;
+    width: 10.2rem;
+    height: 10.2rem;
     border-radius: 100% 100% 0 100%;
     -webkit-animation: random-shape03 3s 1s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
 }
@@ -265,14 +265,14 @@
     position: relative;
     left: 11rem;
     bottom: -11rem;
-    width: 2.2rem;
-    height: 2.2rem;
+    width: 5.2rem;
+    height: 5.2rem;
     animation: 3s cubic-bezier(1, -0.015, 0.155, 0.995) 1s infinite alternate none running random-shape04;
     background-color: rgb(132, 63, 38);
 }
 
 .shape-ani05 {
-    left: 17rem;
+    left: 30rem;
     bottom: -13rem;
     background-color: hsl(51, 100%, 73%);
     width: 5rem;
@@ -348,16 +348,16 @@
 }
 
 .shape-wrap-right {
-    left: 9rem;
+    right: 80rem;
     position: absolute;
-    top: 8rem;
+    top: 57rem;
 }
 .shape-ani06 {
     left: 76rem;
     bottom: -12.5rem;
     background-color: #12485c;
-    width: 10.1rem;
-    height: 10.5rem;
+    width: 20.1rem;
+    height: 20.5rem;
     border-radius: 9.6rem 9.6rem 0 0;
     animation: random-shape 3s 1s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
 }
@@ -365,18 +365,18 @@
     right: -68rem;
     bottom: -12rem;
     background-color: hsl(239, 47%, 53%);
-    width: 5rem;
-    height: 5rem;
+    width: 10rem;
+    height: 10rem;
     border-radius: 4rem;
     animation: random-shape03 3s 1s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
 }
 .shape-ani08 {
-    right: -84.5rem;
-    bottom: -1rem;
+    right: -91.5rem;
+    bottom: 8rem;
     background-color: hsl(230, 83%, 53%);
-    width: 5rem;
-    height: 14rem;
-    border-radius: 4rem;
+    width: 10rem;
+    height: 28rem;
+    border-radius: 8rem;
     position: absolute;
     animation: bounce-shape 2s linear infinite both;
 }
@@ -385,8 +385,8 @@
     right: -75rem;
     bottom: -10rem;
     background-color: hsl(288, 46%, 23%);
-    width: 6rem;
-    height: 6rem;
+    width: 12rem;
+    height: 12rem;
     border-radius: 100%;
     animation: random-shape03 2s linear infinite both;
 }
