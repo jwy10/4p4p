@@ -25,7 +25,8 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    height: 100%;
+    top: 12rem;
+    /* height: 100%; */
 }
 .title {
     font-size: 7.9rem;
@@ -57,6 +58,7 @@
 }
 
 .store-wrap {
+    z-index: 100;
     justify-content: center;
     display: flex;
     font-size: 10px;

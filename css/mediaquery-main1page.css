@@ -3,6 +3,8 @@
 @media screen and (max-width: 1680px) {
     #header .inner-wrap {
         max-width: 100%;
+        display: flex;
+        justify-content: space-between;
     }
 
     /* 확인 후 수정필요 */
@@ -21,8 +23,11 @@
 
 @media screen and (max-width: 1470px) {
     .inner-wrap {
+        width: 100%;
         padding-left: 3rem;
         padding-right: 3rem;
+        display: flex;
+        justify-content: space-between;
     }
 
     /* .section.sec6 .shape-wrap-left,.section.sec6 .shape-wrap-right */
@@ -47,7 +52,10 @@
 }
 
 @media screen and (max-width: 768px) {
-    .pc-hide,
+    .wrap {
+        overflow-y: auto;
+    }
+
     .shppe-wrap-right {
         display: block;
     }
@@ -61,12 +69,13 @@
         display: none !important;
     }
 
-    .fullpage {
+    /* .fullpage {
         height: auto;
         -webkit-text-size-adjust: none;
-    }
+    } */
 
     #header {
+        top: 0vh;
         width: 100%;
         height: 15.8333333333vw;
         background-color: #fff;
@@ -78,18 +87,18 @@
     }
 
     /* 어느부분해당인지 모르겠음 */
-    .logo:after,
+    .logo:after {
+        display: none;
+    }
+
     #sunShape {
         display: none;
     }
 
     .inner-wrap {
+        width: 100%;
         padding: 0 8.3333333333vw;
         height: 100%;
-    }
-
-    .menu-wrap {
-        display: none;
     }
 
     .logo {
@@ -117,20 +126,51 @@
       background-image: url(../images/m_logo.png?v202312141433)
   } */
 
-    .txt-google,
-    .txt-apple {
+    .txt-google {
         font-size: 0;
     }
 
-    .btn-google,
-    .btn-apple {
+    .txt-apple {
+        font-size: 0;
+    }
+    /* 
+    .btn-google {
         width: 46.1111111111vw;
         height: 15.2777777778vw;
         border-radius: 6.1111111111vw;
         border: 0.5555555556vw solid #111;
         text-align: left;
     }
+    .btn-apple {
+        width: 46.1111111111vw;
+        height: 15.2777777778vw;
+        border-radius: 6.1111111111vw;
+        border: 0.5555555556vw solid #111;
+        text-align: left;
+    } */
 
+    .btn-google {
+        width: 46.1111111111vw !important;
+        height: 15.2777777778vw !important;
+        border-radius: 6.1111111111vw;
+        border: 0.5555555556vw solid #111;
+        text-align: left;
+    }
+
+    .btn-apple {
+        width: 46.1111111111vw !important;
+        height: 15.2777777778vw !important;
+        border-radius: 6.1111111111vw;
+        border: 0.5555555556vw solid #111;
+        text-align: left;
+    }
+
+    .store-wrap {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 0rem;
+    }
     .store-wrap [class*='btn-']:hover {
         background-color: #000;
         border-color: #000;
@@ -138,32 +178,28 @@
         box-shadow: 0 3.3333333333vw 8.3333333333vw rgba(116, 139, 255, 0.18);
     }
 
-    .txt-google,
-    .txt-app {
+    .txt-google {
         padding-left: 8.3333333333vw;
-        font-size: 3.8888888889vw;
+        font-size: 3.8888888889vw !important;
     }
 
-    .btn-google,
-    .btn-apple {
-        content: '';
-        width: 5.5555555556vw;
-        height: 6.1111111111vw;
+    .txt-apple {
+        padding-left: 8.3333333333vw;
+        font-size: 3.8888888889vw !important;
     }
 
-    .btn-google,
-    .btn-apple {
-        background-size: 5vw auto;
-    }
-
+    /* 
     .btn-google,
     .btn-apple {
         background-size: 5.5555555556vw auto;
-    }
+    } */
 
-    .btn-google,
-    .btn-apple {
+    .btn-google {
         margin-left: 0;
+        margin-top: 1.1rem;
+    }
+    .btn-apple {
+        margin-left: 0 !important;
         margin-top: 1.1rem;
     }
 
@@ -175,12 +211,14 @@
         display: none;
     }
 
-    .content-wrap,
-    .title-wrap {
+    /* .title-wrap 제거함 */
+    .contents-wrap {
         padding: 22.2222222222vw 12.2222222222vw;
     }
 
-    .content-wrap,
+    .contents-wrap {
+        width: 100%;
+    }
     .title-wrap {
         width: 100%;
     }
@@ -211,8 +249,7 @@
   } */
 
     /* .section.sec0 .content { */
-    .content-wrap,
-    .title-wrap {
+    .contents-wrap {
         padding: 29.7222222222vw 12.2222222222vw 61.9444444444vw;
     }
 
@@ -252,47 +289,21 @@
         font-weight: 600;
     }
 
-    .btn-google,
-    .btn-apple {
-        margin-top: 10vw;
-    }
-
     .shape-wrap-right {
-        position: absolute;
+        display: block;
+        position: relative;
         left: 0;
-        bottom: 5.5555555556vw;
+        bottom: 0vw;
         right: 0;
         width: 100%;
+        overflow-block: visible;
     }
 
-    .shape-wrap-right {
-        position: absolute;
-        overflow: hidden;
-        display: none;
-    }
     .shape-wrap-left {
         display: none;
     }
-
-    .shape-ani06 {
-        overflow: visible;
-        position: absolute;
-        left: 1.3888888889vw;
-        bottom: 0;
-        width: 30.5555555556vw;
-        height: 30.5555555556vw;
-    }
-
-    .shape-ani06 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 100%;
-        background-color: #47c079;
-        -webkit-animation: random-shape02 3s 2s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
-        animation: random-shape02 3s 2s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
+    .anibox-bottom2 {
+        display: none;
     }
 
     /* 배경사진 나는 안 넣음.section.sec0 .content .shape-wrap .shape-ani06:after {
@@ -307,10 +318,13 @@
       background: url(../images/img_c21.png?v202312141433) center no-repeat;
       background-size: 100% auto
   } */
-
+    .shape-ani06 {
+        left: 33vw;
+        bottom: 0vh;
+    }
     .shape-ani07 {
         position: absolute;
-        left: 34.7222222222vw;
+        left: 0.7222222222vw;
         bottom: 0;
         outline: 0.1rem solid rgba(0, 0, 0, 0);
         background-color: #f9632b;
@@ -330,16 +344,7 @@
         height: 30.5555555556vw;
         border-radius: 11.1111111111vw;
     }
-
     .shape-ani09 {
-        position: absolute;
-        right: 0;
-        bottom: 32.7777777778vw;
-        width: 30.5555555556vw;
-        height: 30.5555555556vw;
-        background: url(../images/img_shape01.png?v202312141433) center no-repeat;
-        background-size: 30.5555555556vw auto;
-        -webkit-animation: scale-shape 2.5s 1s ease-in-out infinite both;
-        animation: scale-shape 2.5s 1s ease-in-out infinite both;
+        bottom: 0vh;
     }
 }

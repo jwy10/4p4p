@@ -57,11 +57,11 @@
 } */
 
 .bottom-wrap {
-    display: flex;
+    /* display: flex;
     width: 20vw;
     height: 20vh;
     position: absolute;
-    z-index: 0;
+    z-index: 0; */
 }
 
 /* .anibox-bottom1 {

@@ -3,11 +3,11 @@
 }
 #sunShape {
     background: linear-gradient(tomato, gold, tomato);
-    top: -251%;
-    right: 186%;
-    width: 30vw;
+    top: -20vh;
+    left: -12vw;
+    width: 28vw;
     height: 45vh;
-    animation-duration: 2s;
+    animation-duration: 4s;
     animation-timing-function: ease-out;
     animation-iteration-count: 1;
     animation-direction: normal;
@@ -16,28 +16,29 @@
     animation-delay: 0s;
     border-radius: 50%;
     position: absolute;
-    opacity: 1;
+    opacity: 0.9;
 }
 
 @keyframes sunrise {
     0% {
-        top: 100%;
-        transform: translate3d(-500%, -1020%, 50em);
+        right: 0%;
+        top: -100%;
+        transform: translate3d(1000%, -300%, -50em);
         opacity: 1;
     }
-    50% {
-        top: -100%;
+    65% {
+        top: 25%;
         opacity: 0.5;
     }
     100% {
-        top: -320%;
+        top: -20%;
         opacity: 0.9;
     }
 }
 
 .bottom-wrap {
-    position: absolute;
-    bottom: 50vh;
+    /* position: absolute;
+    bottom: 50vh; */
 }
 .anibox-bottom2 {
     background-size: 11.5rem auto;
@@ -51,15 +52,14 @@
     animation-range-start: normal;
     animation-range-end: normal;
     position: absolute;
-    top: -100%;
-    right: 50%;
 }
+
 .bling1 {
     width: 8vw;
     height: 14vh;
     position: absolute;
     left: 0vw;
-    top: -5vh;
+    top: -50vh;
 }
 .bling2 {
     width: 3vw;
@@ -67,7 +67,7 @@
     animation: scale-shape 5s 2s ease-in-out 1 both;
     position: absolute;
     left: 10vw;
-    top: 0vh;
+    top: -42vh;
 }
 .bling3 {
     width: 5vw;
@@ -75,7 +75,7 @@
     animation: scale-shape 5s 3s ease-in-out 1 both;
     position: absolute;
     left: 10vw;
-    top: -10vh;
+    top: -55vh;
 }
 
 @keyframes scale-shape {
@@ -95,11 +95,11 @@
     border-radius: 100%;
     position: absolute;
     display: block;
-    top: 8vh;
+    top: -1vh;
     left: 6vw;
     justify-content: center;
     display: flex;
-    background-color: rgb(90, 30, 14);
+    background: linear-gradient(lightblue, white);
     animation: random-shape 3s 1s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
 }
 .badgeImg {
@@ -111,8 +111,7 @@
 .shape-wrap-left {
     position: absolute;
     left: 0em;
-    bottom: 11em;
-    height: 10em;
+    bottom: 13em;
 }
 
 .anibox-bottom3::hover {
@@ -224,6 +223,11 @@
     display: block;
     overflow: hidden;
 }
+.shape-wrap-right {
+    position: absolute;
+    bottom: 13em;
+    right: 0em;
+}
 .shape-wrap-right [class*='shape-'] {
     position: absolute;
     display: block;
@@ -231,10 +235,10 @@
 }
 .shape-ani01 {
     left: 0;
-    bottom: -5rem;
-    background-color: #f1a33e;
-    width: 20rem;
-    height: 20rem;
+    bottom: 1rem;
+    background: linear-gradient(#ef9556, yellow, #acf8ac);
+    width: 15rem;
+    height: 15rem;
     border-radius: 0 100% 100% 0;
     animation: random-shape01 3s 2s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
 }
@@ -242,7 +246,7 @@
 .shape-ani02 {
     left: 17rem;
     bottom: -13rem;
-    background-color: hsl(51, 100%, 73%);
+    background: linear-gradient(hwb(177 48% 2%), hsl(120, 78%, 71%));
     width: 10rem;
     height: 28rem;
     border-radius: 4rem;
@@ -252,11 +256,11 @@
 
 .shape-ani03 {
     left: 0rem;
-    bottom: 10rem;
+    bottom: 17rem;
     outline: 0.1rem solid rgba(0, 0, 0, 0);
-    background-color: #f9632b;
-    width: 10.2rem;
-    height: 10.2rem;
+    background: linear-gradient(orangered, coral, pink);
+    width: 7.2rem;
+    height: 7.2rem;
     border-radius: 100% 100% 0 100%;
     -webkit-animation: random-shape03 3s 1s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
 }
@@ -268,13 +272,13 @@
     width: 5.2rem;
     height: 5.2rem;
     animation: 3s cubic-bezier(1, -0.015, 0.155, 0.995) 1s infinite alternate none running random-shape04;
-    background-color: rgb(132, 63, 38);
+    background: linear-gradient(white, yellow);
 }
 
 .shape-ani05 {
     left: 30rem;
     bottom: -13rem;
-    background-color: hsl(51, 100%, 73%);
+    background: linear-gradient(yellow, #09e909);
     width: 5rem;
     height: 14rem;
     border-radius: 4rem;
@@ -347,45 +351,40 @@
     }
 }
 
-.shape-wrap-right {
-    right: 80rem;
-    position: absolute;
-    top: 57rem;
-}
 .shape-ani06 {
-    left: 76rem;
-    bottom: -12.5rem;
-    background-color: #12485c;
-    width: 20.1rem;
-    height: 20.5rem;
+    right: 1rem;
+    bottom: -10.5rem;
+    background: linear-gradient(skyblue, blue, navy, black);
+    width: 17.1rem;
+    height: 17.5rem;
     border-radius: 9.6rem 9.6rem 0 0;
     animation: random-shape 3s 1s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
 }
 .shape-ani07 {
-    right: -68rem;
-    bottom: -12rem;
-    background-color: hsl(239, 47%, 53%);
+    right: 20rem;
+    bottom: -7rem;
+    background: linear-gradient(blue, skyblue);
     width: 10rem;
     height: 10rem;
     border-radius: 4rem;
     animation: random-shape03 3s 1s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
 }
 .shape-ani08 {
-    right: -91.5rem;
+    right: 5.5rem;
     bottom: 8rem;
-    background-color: hsl(230, 83%, 53%);
-    width: 10rem;
-    height: 28rem;
+    background: linear-gradient(lightblue, gray);
+    width: 7rem;
+    height: 20rem;
     border-radius: 8rem;
     position: absolute;
     animation: bounce-shape 2s linear infinite both;
 }
 
 .shape-ani09 {
-    right: -75rem;
-    bottom: -10rem;
-    background-color: hsl(288, 46%, 23%);
-    width: 12rem;
+    right: 34rem;
+    bottom: -14rem;
+    background: linear-gradient(hsl(277, 67%, 60%), #59ceeb);
+    width: 8rem;
     height: 12rem;
     border-radius: 100%;
     animation: random-shape03 2s linear infinite both;

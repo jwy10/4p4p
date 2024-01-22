@@ -13,10 +13,19 @@ body {
 }
 .wrap {
     position: relative;
-    top: 0;
     width: 100%;
-    height: 81.7%;
-    transition: 0.5s;
+}
+.down {
+    position: fixed;
+    bottom: 0vh;
+    left: calc(50% - 3.2rem);
+    width: 6.4rem;
+    height: 6.4rem;
+    background: url('../img/down.png') center no-repeat;
+    background-size: 4.7rem 4.4rem;
+    -webkit-animation: floating 0.6s ease-out infinite alternate both;
+    animation: floating 0.6s ease-out infinite alternate both;
+    z-index: 1000;
 }
 .container {
     width: 100%;
@@ -34,22 +43,26 @@ body {
 
 /* 헤더 */
 #header {
-    display: block;
-    position: fixed;
+    /* display: block;
+    position: fixed; */
+    z-index: 100;
     width: 100%;
-    top: 0;
-    z-index: 3;
+    font-size: 2rem;
+    font-weight: 800;
+    /* z-index: 3;
     left: 0;
-    right: 0;
-    height: 10vh;
-    background-color: #fff;
+    right: 0; */
+    /* height: 10rem; */
+    /* background-color: #fff; */
+    position: fixed;
+    top: 10vh;
 }
 
 .inner-wrap {
     display: flex;
     justify-content: space-between;
-    margin-top: 2%;
-    align-items: center;
+    /* margin-top: 2%; */
+
     width: 100%;
 }
 
