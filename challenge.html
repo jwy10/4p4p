@@ -6,22 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>굿모닝윗미-챌린지</title>
   <!-- css 링크 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/reset.css" />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/animation.css" />
   <link rel="stylesheet" href="./css/contents-animation.css">
   <link rel="stylesheet" href="./css/title-wrap.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" as="style" crossorigin
-    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
 
 
 
   <!-- script 링크 -->
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-  
+
+
+
+
 
 
 
@@ -38,40 +42,91 @@
           <ul class="menu-list">
             <li><a href="" class="txt-about">About</a></li>
             <li><a href="" class="txt-challenge">challenge</a></li>
-            <li><a href="" class="txt-profile">Profile</a></li> 
+            <li><a href="" class="txt-profile">Profile</a></li>
           </ul>
         </h3>
       </nav>
     </div>
   </header>
 
+  <!-- Slider main container -->
   <div class="swiper">
-    
+    <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
-
+      <!-- Slides -->
       <div class="swiper-slide">
-        <img src="/img/ing_01.jpg" alt="">
+        <img src="./img/ing_01.jpg" alt="진행중인 챌린지 1">
       </div>
       <div class="swiper-slide">
-        <img src="/img/ing_02.jpg" alt="">
+        <img src="./img/ing_02.jpg" alt="진행중인 챌린지 2">
       </div>
       <div class="swiper-slide">
-        <img src="/img/ing_03.jpg" alt="">
+        <img src="./img/ing_03.jpg" alt="진행중인 챌린지 3">
       </div>
-      
+      <div class="swiper-slide">
+        <img src="./img/ing_01.jpg" alt="진행중인 챌린지 1">
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/ing_02.jpg" alt="진행중인 챌린지 2">
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/ing_03.jpg" alt="진행중인 챌린지 3">
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/ing_01.jpg" alt="진행중인 챌린지 1">
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/ing_02.jpg" alt="진행중인 챌린지 2">
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/ing_03.jpg" alt="진행중인 챌린지 3">
+      </div>
     </div>
-
     <div class="swiper-pagination"></div>
-  
-
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
-  
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+  <div class="recommand_challenge">
+    <div class="rec_head">
+      <h3 class="rec_head_title">회원님을 위한 추천 챌린지</h3>
+    </div>
+
+    <div class="recommand_list">
+      <div class="chall_box">
+        <div class="chall_main"></div>
+        <h3>미라클모닝</h3>
+      </div>
+
+      <div class="chall_box">
+        <div class="chall_main"></div>
+        <div class="chall_expl"></div>
+      </div>
+
+      <div class="chall_box">
+        <div class="chall_main"></div>
+        <div class="chall_expl"></div>
+      </div>
+
+      <div class="chall_box">
+        <div class="chall_main"></div>
+        <div class="chall_expl"></div>
+      </div>
+
+      <div class="chall_box">
+        <div class="chall_main"></div>
+        <div class="chall_expl"></div>
+      </div>
+
+
+    </div>
+
   </div>
 
 
 
-  <script src="/js/common.js"></script>
+  <script src="./js/challenge.js"></script>
 </body>
 
 </html>
