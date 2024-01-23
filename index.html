@@ -5,15 +5,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>굿모닝 윗미 - 메인</title>
-        
+        <!-- css 링크 -->
         <link rel="stylesheet" href="./css/reset.css" />
-        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/style_4p4p.css" />
+        <link rel="stylesheet" href="./css/animation.css" />
+        <link rel="stylesheet" href="./css/contents-animation.css">
+        <link rel="stylesheet" href="./css/title-wrap.css">
+              <link rel="stylesheet" href="./css/headerAnimation.css">
+              <link rel="stylesheet" href="./css/title-animation.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
         <link
             rel="stylesheet"
             as="style"
             crossorigin
             href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
         />
+
+        <!-- script 링크 -->
+
         <link rel="stylesheet" href="./css/contents-animation.css" />
         <link rel="stylesheet" href="./css/title-animation.css" />
         <link rel="stylesheet" href="./css/title-wrap.css" />
@@ -22,6 +32,8 @@
         <link rel="stylesheet" href="./css/mediaquery-main1page.css" media="screen">
         
         <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js" integrity="sha512-LGiXf+jHGTHcIybSsOWO3I/in+OObCkcEsWIZ7IyhzfD6RzD5qDUw2CK+JveuI7zTSEcDG//bIOvOpAJW2BWsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./js/fullpage.min.js"></script>
     </head>
 
     <body>
@@ -99,7 +111,7 @@
            
             
             <!-- 여기가 현우형 페이지 -->
-            <div class="container">
+            <div class="section">
                 <div class="chg_cnt">
                     <div class="txt_wrap">
                         <p class="sub_tit"><span>01</span> 일상챌린지</p>
@@ -109,7 +121,7 @@
                         </p>
                     </div>
                     <ul>
-                        <li>
+                        <li class="ani01">
                             <div>
                                 <a href="#none">
                                     <img src="./img/chg_img01.png" alt="" />
@@ -119,7 +131,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li>
+                        <li class="ani02">
                             <div>
                                 <a href="#none">
                                     <img src="./img/chg_img02.png" alt="" />
@@ -129,7 +141,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li>
+                        <li class="ani03">
                             <div>
                                 <a href="#none">
                                     <img src="./img/chg_img03.png" alt="" />
@@ -139,7 +151,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li>
+                        <li class="ani04">
                             <div>
                                 <a href="#none">
                                     <img src="./img/chg_img04.png" alt="" />
@@ -153,8 +165,86 @@
                 </div>
             </div>
             <!-- 여기가 하루 페이지 -->
-            <div class="container"></div>
+            <div class="container">
+                <footer>
+                    <div class="top_footer">
+                        <div class="item">
+                            <h2><b class="size1">굿모닝 윗미</b></h2>
+                            <h2>
+                                <b><span>제휴 및 광고</span> 관련 문의</b>
+                            </h2>
+                            <br />
+                            <br />
+                            <div class="arrow_wrap arrow_wrap01">
+                                <span class="arrow_01"></span>
+                                <span class="arrow_02"></span>
+                                <span class="arrow_03"></span>
+                                <span class="arrow_04"></span>
+                            </div>
+                            <h4 class="line1"><b>service@spreatics.com</b></h4>
+                        </div>
+    
+                        <div class="item2">
+                            <div><b class="size1">굿모닝 윗미</b></div>
+                            <h2>
+                                <b><span>서비스</span> 관련 문의</b>
+                            </h2>
+                            <br />
+                            <br />
+                            <div class="arrow_wrap arrow_wrap02">
+                                <span class="arrow_01"></span>
+                                <span class="arrow_02"></span>
+                                <span class="arrow_03"></span>
+                                <span class="arrow_04"></span>
+                            </div>
+                            <h4 class="line2"><b>https://github.com/jwy10/4p4p.git</b></h4>
+                        </div>
+                    </div>
+                    <br />
+                    <div>
+                        <div class="round1"></div>
+                        <div class="round2"></div>
+                        <div class="round3"></div>
+                        <div class="round4"></div>
+                        <div class="round5"></div>
+                        <div class="round6"></div>
+                    </div>
+                    <div class="footer-content">
+                        <div class="main2">
+                            <p class="logo2"><b>(주)코딩온</b></p>
+                            <p class="logo3">탈퇴하기 이용약관 <b>개인정보 처리약관</b></p>
+                            <div class="underline1"></div>
+                        </div>
+                        <br />
+                        <div class="main3">
+                            <p class="logo4">서울 마포구 숭문4길 6 2024 CodingOn. designed by <span>4p4p</span></p>
+                            <p class="logo5">사업자등록번호 123-45-67890 All rights reserved</p>
+                        </div>
+                        <ul class="socials">
+                            <li>
+                                <a href="https://www.facebook.com/facebook/" target="_blank"
+                                    ><i class="fa fa-facebook"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://kr.linkedin.com/?trk=public_jobs_nav-header-logo" target="_blank"
+                                    ><i class="fa fa-linkedin-square"></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
+                </footer>
+            </div>
         </div>
-        <script src="/js/common.js"></script>
+        <script src="/js/common_4p4p.js"></script>
     </body>
 </html>

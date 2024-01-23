@@ -18,3 +18,31 @@
 //     console.log(e.deltaY)
 //     wrap.style.top = page * -100 + 'vh';
 // },{passive:false}); // 디폴트 기능 제거 - 스크롤
+new fullpage('#fullpage', {
+    anchors: ['page1', 'page2', 'page3', 'page4'],
+    navigationTooltips: ['fullPage', 'Open', 'Easy', 'Touch'],
+    css3: true,
+    scrollingSpeed: 1000,
+    navigation: true,
+    slidesNavigation: true,
+    responsiveHeight: 330,
+    dragAndMove: true,
+    dragAndMoveKey: 'YWx2YXJvdHJpZ28uY29tX0EyMlpISmhaMEZ1WkUxdmRtVT0wWUc=',
+    controlArrows: false
+  });
+
+// 챌린지 상단 ; 내가 신청한 챌린지
+const swiper = new Swiper('.swiper', {
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    
+  });
