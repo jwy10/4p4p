@@ -13,10 +13,19 @@ body {
 }
 .wrap {
     position: relative;
-    top: 0;
     width: 100%;
-    height: 81.7%;
-    transition: 0.5s;
+}
+.down {
+    position: fixed;
+    bottom: 0vh;
+    left: calc(50% - 3.2rem);
+    width: 6.4rem;
+    height: 6.4rem;
+    background: url('../img/down.png') center no-repeat;
+    background-size: 4.7rem 4.4rem;
+    -webkit-animation: floating 0.6s ease-out infinite alternate both;
+    animation: floating 0.6s ease-out infinite alternate both;
+    z-index: 1000;
 }
 .container {
     width: 100%;
@@ -34,21 +43,29 @@ body {
 
 /* 헤더 */
 #header {
-    position: fixed;
+    /* display: block;
+    position: fixed; */
+    z-index: 100;
     width: 100%;
-    top: 0;
-    z-index: 3;
+    font-size: 2rem;
+    font-weight: 800;
+    /* z-index: 3;
     left: 0;
-    right: 0;
-    height: 10rem;
+    right: 0; */
+    /* height: 10rem; */
+    /* background-color: #fff; */
+    position: fixed;
+    top: 10vh;
 }
+
 .inner-wrap {
     display: flex;
     justify-content: space-between;
-    margin-top: 2%;
-    align-items: center;
+    /* margin-top: 2%; */
+
     width: 100%;
 }
+
 li {
     float: left;
     margin: 0px 10px 0px;
@@ -61,54 +78,8 @@ li {
 }
 
 /* 메인 */
-.title-cloud {
-    width: 4vw;
-    height: 5vh;
-    object-fit: fill;
-}
-.title-sun {
-    width: 5vw;
-    height: 6vh;
-    object-fit: fill;
-    border-radius: 50%;
-}
 
 /* .sunshine {position: absolute;width: 50px;height: 50px;background: linear-gradient(    120deg,    rgb(240, 215, 72),    yellow,    white,    rgb(240, 215, 72),    yellow,    white,    rgb(240, 215, 72),    yellow,    white,    rgb(240, 215, 72),    yellow,    white); opacity: 0.35; display: inline-block; border-color: yellow; border-radius: 20px 20px 20px 0px;} */
-.content-wrap {
-    position: relative;
-}
-.title {
-    position: relative;
-    margin-top: 17vh;
-    display: flex;
-    justify-content: center;
-    font-weight: 900;
-    text-align: center;
-}
-.big-tit01 {
-    font-size: 70px;
-    text-decoration: underline;
-    word-spacing: -6px;
-}
-.big-tit02 {
-    font-size: 70px;
-    text-decoration: underline;
-    word-spacing: -5px;
-}
-.big-tit03 {
-    font-size: 35px;
-    word-spacing: -5px; /* title 크기 바뀐만큼 container1 사이즈 조절하기 - 수정된 길이 16.3% */
-    margin-top: 5vh;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    position: relative;
-}
-.store-wrap {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    margin-top: 13vh;
-}
 
 .google {
     margin-right: 1vw;
@@ -153,6 +124,8 @@ li {
     color: white;
 }
 
+<<<<<<< HEAD
+=======
 /* 화살표 */
 .downImg {
     width: 5vw;
@@ -164,6 +137,7 @@ li {
     justify-content: center;
 }
 
+>>>>>>> dev
 /* ==================================================================================================================================================== */
 
 /* 컨텐츠 - 챌린지 */
@@ -353,7 +327,11 @@ container {
     text-align: center;
     border-radius: 5%;
 }
+<<<<<<< HEAD
+span:not(.txt) {
+=======
 span {
+>>>>>>> dev
     color: #8e9fe3;
 }
 /* not 선택자 추가 */
@@ -712,6 +690,21 @@ footer {
     border-radius: 4rem;
     position: absolute;
 }
+<<<<<<< HEAD
+:root {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    cursor: default;
+    font-family: 'Pretendard', -apple-system, AppleSDGothicNeo, 'Malgun Gothic', Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 62.5%;
+    word-break: keep-all;
+    color: #000;
+}
+=======
 
 .footer_wrap .shape-wrap-right {
     position: absolute;
@@ -829,3 +822,4 @@ img{
     height: 100%;
     border-radius: 10px;
 }
+>>>>>>> dev
