@@ -707,7 +707,7 @@ footer {
 /* 챌린지 - 진행중인 챌린지 */
 .swiper {
     top: 10vh;
-    width: 81vw;
+    width: 80vw;
     height: 30vh;
     border-radius: 10px;
   }
@@ -717,7 +717,7 @@ footer {
     height: 100%;
     text-align: center;
     font-size: 18px;
-    background: yellowgreen;
+    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -733,15 +733,15 @@ footer {
   }
   
   .swiper-scrollbar {
-    color: yellowgreen;
+    color: #fff;
     background: none;
   }
   
-  .imging{
+  /* .imging{
     width: 100%;
     height: 100%;
     border-radius: 10px;
-  }
+  } */
   
   .swiper-pagination-bullet {
     width: 40px;
@@ -807,32 +807,75 @@ footer {
     background-image: url(../img/arrow_right_hover.jpg)
   }
 
+  img{
+    border-radius: 10px;
+  }
+
 /* 챌린지 - 추천 챌린지 */
  .recommand_challenge{
     position: relative;
+    width: 80.3vw;
     top: 15vh;
-    left: 9.5vw;
+    left: 10vw;
     font-family: 'Pretendard JP',Pretendard,system-ui,-apple-system,BlinkMacSystemFont,Roboto,
     'Helvetica Neue','Segoe UI','Noto Sans KR','Malgun Gothic',sans-serif;
+    overflow: hidden;
   }
 
 .rec_head{
     display: flex;
-  }
+    justify-content: space-between;
+}
+
+.rec_head_title{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.rec_more{
+    display: flex;
+}
+
+.rec_more_all{
+    font-size: 15px;
+    color: rgb(133, 133, 133);
+    margin-top: 20px;
+}
+
+.more_left,.more_right{
+    width: 2vw;
+    height: 100%;
+    border: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+
+}
 
 .recommand_list{
     display: flex;
 
-}
+    
 
+}
   
 .chall_main{
     margin-top: 5px;
-    width: 15.9vw;
+    width: 15vw;
     height: 24vh;
-    margin-right: 5px;
+    margin-right: 25px;
     background-color: grey;
+    border-radius: 10px;
+}
+
+.chall_main img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
+
 
   .chall_expl{
     height: 5px;
