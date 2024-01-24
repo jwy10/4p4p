@@ -28,7 +28,6 @@
     top: 12rem;
     /* height: 100%; */
 }
-<<<<<<< HEAD
 .title {
     font-size: 7.9rem;
     line-height: 11.2rem;
@@ -38,7 +37,6 @@
     flex-direction: column;
 }
 
-=======
 /* .title {
     position: relative;
     display: flex;
@@ -46,7 +44,6 @@
     font-weight: 900;
     text-align: center;
 } */
->>>>>>> dev
 .big-tit01 {
     font-size: 7.9rem;
     text-decoration: underline;
