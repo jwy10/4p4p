@@ -22,6 +22,7 @@ flex-shrink: 1; */
     width: 100%;
     text-align: center;
     line-height: 10vh;
+    background-color: white;
 }
 
 li {
@@ -152,10 +153,11 @@ span.light {
     }
 }
 /* ---------------------------page----------------------------- */
-.main {
+.sub_full_wrap {
     overflow-y: scroll;
-    margin-left: 13vw;
-    margin-right: 13dvw;
+    position: relative;
+    /* 자식 선택자에 position: absolute를 주고 위치를 고정시키니
+박스가 위로 올라가서 내용이 잘리는 현상을 막을 수 있었다. */
 }
 /* ------------------------sec0 -------------------------- */
 .main_container {
@@ -168,10 +170,10 @@ span.light {
     align-items: center;
 }
 .main_img {
-    width: 60vw;
-    height: 60vh;
+    width: 50vw;
+    height: 50vh;
     object-fit: fill;
-    border-radius: 3em;
+    border-radius: 50%;
 }
 .challenge_title {
     font-weight: 700;
@@ -230,4 +232,63 @@ span.light {
     color: white;
     -webkit-box-shadow: 0 3.3333333333vw 8.3333333333vw rgba(116, 139, 255, 0.18);
     box-shadow: 0 3.3333333333vw 8.3333333333vw rgba(116, 139, 255, 0.18);
+}
+/* -----------------------sec1-----------------------  */
+.sec1 {
+    display: flex;
+    flex-direction: column !important;
+    align-content: center;
+    align-items: center;
+}
+
+hr {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+.blockquote_wrap:before {
+    content: '\201C';
+    font-size: 3em;
+    font-family: Georgia;
+    color: gray;
+    margin-top: 0.2em;
+    /* margin: -5px 10px 0px -10px; */
+}
+
+.blockquote_wrap:after {
+    display: block;
+    margin-top: 0.5em;
+    content: '\201C';
+    font-size: 3em;
+    font-family: Georgia;
+    color: gray;
+    /* margin: -5px 10px 0px -10px; */
+}
+.blockquote_wrap {
+    background: linear-gradient(orange, #f5d79e, #ebeb91, #c1bfbf, skyblue);
+    width: 20em;
+    height: 20em;
+    border-radius: 3em;
+    text-align: center;
+    position: absolute;
+    font-weight: 600;
+    font-size: 2em;
+    opacity: 0.8;
+}
+
+blockquote {
+    margin-top: 1em;
+    display: block;
+}
+
+.guide_wrap {
+    display: flex;
+    align-items: center;
+}
+.explanation {
+    background-color: blue;
+    position: absolute;
+    line-height: 2em;
+    font-size: 2em;
+    font-weight: 400;
+    margin: 10em 10em 10em 10em;
 }

@@ -6,22 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>굿모닝윗미-챌린지</title>
   <!-- css 링크 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/reset.css" />
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/challenge.css" />
   <link rel="stylesheet" href="./css/animation.css" />
   <link rel="stylesheet" href="./css/contents-animation.css">
   <link rel="stylesheet" href="./css/title-wrap.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" as="style" crossorigin
-    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
 
 
 
   <!-- script 링크 -->
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-  
+
+
+
+
 
 
 
@@ -38,40 +42,235 @@
           <ul class="menu-list">
             <li><a href="" class="txt-about">About</a></li>
             <li><a href="" class="txt-challenge">challenge</a></li>
-            <li><a href="" class="txt-profile">Profile</a></li> 
+            <li><a href="" class="txt-profile">Profile</a></li>
           </ul>
         </h3>
       </nav>
     </div>
   </header>
 
+  <!-- Slider main container -->
   <div class="swiper">
-    
+    <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <img src="./img/chall_main.png" alt="">
+
+      </div>
 
       <div class="swiper-slide">
-        <img src="/img/ing_01.jpg" alt="">
+        <img src="./img/chall_book.png" alt="">
       </div>
       <div class="swiper-slide">
-        <img src="/img/ing_02.jpg" alt="">
+        <img src="./img/chall_diary" alt="">
       </div>
       <div class="swiper-slide">
-        <img src="/img/ing_03.jpg" alt="">
+        <img src="./img/miraclemorning_main.png" alt="">
       </div>
-      
+            <div class="swiper-slide">
+        <img src="./img/ddtox.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/running.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/water.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/pt.png" alt="">
+      </div>
+
+      <div class="swiper-slide">
+        <img src="./img/chall_cook.png" alt="">
+      </div>
     </div>
-
-    <div class="swiper-pagination"></div>
-  
-
+    <!-- <div class="swiper-pagination"></div> -->
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
-  
+    <div class="swiper-scrollbar"></div>
   </div>
 
+  <div class="attend">
+    <div class="attend_ph1">매일 성장하는 일상을 만드는 습관의 시작!</div>
+    <div class="attend_ph2">
+      <div style="padding-right: 0.3vw;">이번달은</div>
+      <div style="padding-right: 0.3vw; color: rgb(255, 72, 0);">1일째</div>
+      <div>출석중</div>
+      <img style="width: 18px; height: 22px;" src="./img/fire_imoji" alt="">
+    </div>
+    <div class="attend_calday">
+      <p>일</p>
+      <p>월</p>
+      <p>화</p>
+      <p>수</p>
+      <p>목</p>
+      <p>금</p>
+      <p>토</p>
+    </div>
+    <div class="attend_caldate">
+      <input type="checkbox" name="" id="">
+    </div>
+  </div>
 
+  <div class="recommand_challenge">
 
-  <script src="/js/common.js"></script>
+    <div class="rec_head">
+      <h2 class="rec_head_title">회원님을 위한 추천 챌린지</h2>
+      <div class="rec_more">
+        <h5 class="rec_more_all">더 보기</h5>
+        <button type="button" class="more_left"><</button>
+            <button type="button" class="more_right">></button>
+      </div>
+
+    </div>
+
+    <div class="recommand_list">
+      <div class="chall_box">
+        <div class="chall_main">
+          <img src="./img/miraclemorning.png" alt="">
+        </div>
+        <div class="chall_title">
+          <h3>미라클모닝</h3>
+        </div>        
+        <div class="chall_expl">
+          <h6>힘겨운 아침이 기다려지는 순간</h6>
+        </div>
+      </div>
+
+      <div class="chall_box">
+        <div class="chall_main">
+          <img src="./img/running.png" alt="">
+        </div>
+        <div class="chall_title">
+          <h3>런닝하기</h3>
+        </div>        
+        <div class="chall_expl">
+          <h6>걷다보니 뛰고있는 나를 발견하다</h6>
+        </div>
+      </div>
+
+      <div class="chall_box">
+        <div class="chall_main">
+          <img src="./img/ddtox.jpg" alt="">
+        </div>
+        <div class="chall_title">
+          <h3>디지털디톡스</h3>
+        </div>        
+        <div class="chall_expl">
+          <h6>지친 머리를 비워보는 시간</h6>
+        </div>
+      </div>
+
+      <div class="chall_box">
+        <div class="chall_main">
+          <img src="./img/water.png" alt="">
+        </div>
+        <div class="chall_title">
+          <h3>물 한잔 마시기</h3>
+        </div>        
+        <div class="chall_expl">
+          <h6>내 몸을 위한 간단한 습관</h6>
+        </div>
+      </div>
+
+      <div class="chall_box">
+        <div class="chall_main">
+          <img src="./img/pt.png" alt="">
+        </div>
+        <div class="chall_title">
+          <h3>헬스장 가기</h3>
+        </div>        
+        <div class="chall_expl">
+          <h6>우리 함께 멋진 몸을 만들어가요</h6>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="recommand_challenge">
+
+    <div class="rec_head">
+      <h2 class="rec_head_title">주간 HOT Challenge</h2>
+      <div class="rec_more">
+        <h5 class="rec_more_all">더 보기</h5>
+        <button type="button" class="more_left"><</button>
+        <button type="button" class="more_right">></button>
+      </div>
+
+    </div>
+
+    <div class="recommand_list">
+
+      <div class="chall_box">
+        <div class="chall_main">
+          <img src="./img/water.png" alt="">
+        </div>
+        <div class="chall_title">
+          <h3>물 한잔 마시기</h3>
+        </div>        
+        <div class="chall_expl">
+          <h6>내 몸을 위한 간단한 습관</h6>
+        </div>
+      </div>
+
+      <div class="chall_box">
+        <div class="chall_main">
+          <img src="./img/miraclemorning.png" alt="">
+        </div>
+        <div class="chall_title">
+          <h3>미라클모닝</h3>
+        </div>        
+        <div class="chall_expl">
+          <h6>힘겨운 아침이 기다려지는 순간</h6>
+        </div>
+      </div>
+
+      <div class="chall_box">
+        <div class="chall_main">
+          <img src="./img/running.png" alt="">
+        </div>
+        <div class="chall_title">
+          <h3>런닝하기</h3>
+        </div>        
+        <div class="chall_expl">
+          <h6>걷다보니 뛰고있는 나를 발견하다</h6>
+        </div>
+      </div>
+
+      <div class="chall_box">
+        <div class="chall_main">
+          <img src="./img/chall_cook.png" alt="">
+        </div>
+        <div class="chall_title">
+          <h3>요리하기</h3>
+        </div>        
+        <div class="chall_expl">
+          <h6>숨겨진 재능의 발견</h6>
+        </div>
+      </div>
+
+      <div class="chall_box">
+        <div class="chall_main">
+          <img src="./img/chall_words" alt="">
+        </div>
+        <div class="chall_title">
+          <h3>외국어 공부</h3>
+        </div>        
+        <div class="chall_expl">
+          <h6>시작이 반이다</h6>
+        </div>
+
+      </div>
+
+    </div>
+    <br style="width: 100%; height: 10vh;">
+  </div>
+
+  <script src="./js/challenge.js"></script>
 </body>
 
 </html>
