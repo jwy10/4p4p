@@ -3,11 +3,11 @@
 }
 #sunShape {
     background: linear-gradient(tomato, gold, tomato);
-    top: -320%;
-    right: 5%;
-    width: 30vw;
+    top: -20vh;
+    left: -12vw;
+    width: 28vw;
     height: 45vh;
-    animation-duration: 2s;
+    animation-duration: 4s;
     animation-timing-function: ease-out;
     animation-iteration-count: 1;
     animation-direction: normal;
@@ -16,21 +16,22 @@
     animation-delay: 0s;
     border-radius: 50%;
     position: absolute;
-    opacity: 1;
+    opacity: 0.9;
 }
 
 @keyframes sunrise {
     0% {
-        top: 100%;
-        transform: translate3d(-600%, -520%, 50em);
+        right: 0%;
+        top: -100%;
+        transform: translate3d(1000%, -300%, -50em);
         opacity: 1;
     }
-    50% {
-        top: -100%;
+    65% {
+        top: 25%;
         opacity: 0.5;
     }
     100% {
-        top: -320%;
+        top: -20%;
         opacity: 0.9;
     }
 }
@@ -47,15 +48,14 @@
     animation-range-start: normal;
     animation-range-end: normal;
     position: absolute;
-    top: -100%;
-    right: 50%;
 }
+
 .bling1 {
     width: 8vw;
     height: 14vh;
     position: absolute;
     left: 0vw;
-    top: -5vh;
+    top: -50vh;
 }
 .bling2 {
     width: 3vw;
@@ -63,7 +63,7 @@
     animation: scale-shape 5s 2s ease-in-out 1 both;
     position: absolute;
     left: 10vw;
-    top: 0vh;
+    top: -42vh;
 }
 .bling3 {
     width: 5vw;
@@ -71,7 +71,7 @@
     animation: scale-shape 5s 3s ease-in-out 1 both;
     position: absolute;
     left: 10vw;
-    top: -10vh;
+    top: -55vh;
 }
 
 @keyframes scale-shape {
@@ -84,12 +84,6 @@
     }
 }
 
-.bottom-wrap {
-    position: absolute;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 .anibox-bottom3 {
     background-size: 7.6em auto;
     width: 7rem;
@@ -97,11 +91,11 @@
     border-radius: 100%;
     position: absolute;
     display: block;
-    top: 8vh;
+    top: -1vh;
     left: 6vw;
     justify-content: center;
     display: flex;
-    background-color: rgb(90, 30, 14);
+    background: linear-gradient(lightblue, white);
     animation: random-shape 3s 1s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
 }
 .badgeImg {
@@ -112,8 +106,8 @@
 
 .shape-wrap-left {
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: 0em;
+    bottom: 13em;
 }
 
 .anibox-bottom3::hover {
@@ -133,8 +127,206 @@
         -webkit-mask-position: -50%;
     }
 }
- {
+
+
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
 }
+.shape-wrap-left [class*='shape-'] {
+    position: absolute;
+    display: block;
+    overflow: hidden;
+}
+.shape-wrap-right {
+    position: absolute;
+    bottom: 13em;
+    right: 0em;
+}
+.shape-wrap-right [class*='shape-'] {
+    position: absolute;
+    display: block;
+    overflow: hidden;
+}
+.shape-ani01 {
+    left: 0;
+    bottom: 1rem;
+    background: linear-gradient(#ef9556, yellow, #acf8ac);
+    width: 15rem;
+    height: 15rem;
+    border-radius: 0 100% 100% 0;
+    animation: random-shape01 3s 2s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
+}
+
+.shape-ani02 {
+    left: 17rem;
+    bottom: -13rem;
+    background: linear-gradient(hwb(177 48% 2%), hsl(120, 78%, 71%));
+    width: 10rem;
+    height: 28rem;
+    border-radius: 4rem;
+    position: absolute;
+    animation: random-shape02 3s 2s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
+}
+
+.shape-ani03 {
+    left: 0rem;
+    bottom: 17rem;
+    outline: 0.1rem solid rgba(0, 0, 0, 0);
+    background: linear-gradient(orangered, coral, pink);
+    width: 7.2rem;
+    height: 7.2rem;
+    border-radius: 100% 100% 0 100%;
+    -webkit-animation: random-shape03 3s 1s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
+}
+.shape-ani04 {
+    overflow: visible;
+    position: relative;
+    left: 11rem;
+    bottom: -11rem;
+    width: 5.2rem;
+    height: 5.2rem;
+    animation: 3s cubic-bezier(1, -0.015, 0.155, 0.995) 1s infinite alternate none running random-shape04;
+    background: linear-gradient(white, yellow);
+}
+
+.shape-ani05 {
+    left: 30rem;
+    bottom: -13rem;
+    background: linear-gradient(yellow, #09e909);
+    width: 5rem;
+    height: 14rem;
+    border-radius: 4rem;
+    position: absolute;
+    animation: random-shape02 3s 2s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
+}
+
+@keyframes random-shape {
+    0% {
+        border-radius: 100% 100% 0 100%;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        border-radius: 4rem;
+        transform: rotate(90deg);
+    }
+
+    100% {
+        border-radius: 100%;
+        transform: rotate(180deg);
+    }
+}
+
+@-webkit-keyframes random-shape02 {
+    0% {
+        border-radius: 100%;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        border-radius: 4rem;
+        transform: rotate(90deg);
+    }
+
+    100% {
+        border-radius: 100%;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes random-shape03 {
+    0% {
+        border-radius: 4rem;
+    }
+
+    50% {
+        border-radius: 0 100% 100% 100%;
+        transform: rotate(90deg);
+    }
+
+    100% {
+        border-radius: 4rem;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes random-shape04 {
+    0% {
+        border-radius: 100% 100% 0 100%;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        border-radius: 4rem;
+    }
+
+    100% {
+        border-radius: 100%;
+    }
+}
+
+.shape-ani06 {
+    right: 1rem;
+    bottom: -10.5rem;
+    background: linear-gradient(skyblue, blue, navy, black);
+    width: 17.1rem;
+    height: 17.5rem;
+    border-radius: 9.6rem 9.6rem 0 0;
+    animation: random-shape 3s 1s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
+}
+.shape-ani07 {
+    right: 20rem;
+    bottom: -7rem;
+    background: linear-gradient(blue, skyblue);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 4rem;
+    animation: random-shape03 3s 1s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
+}
+.shape-ani08 {
+    right: 5.5rem;
+    bottom: 8rem;
+    background: linear-gradient(lightblue, gray);
+    width: 7rem;
+    height: 20rem;
+    border-radius: 8rem;
+    position: absolute;
+    animation: bounce-shape 2s linear infinite both;
+}
+
+.shape-ani09 {
+    right: 34rem;
+    bottom: -12rem;
+    background: linear-gradient(hsl(277, 67%, 60%), #59ceeb);
+    width: 8rem;
+    height: 12rem;
+    border-radius: 100%;
+    animation: random-shape03 2s linear infinite both;
+}
+
+@keyframes bounce-shape {
+    0% {
+        transform: rotate(0);
+    }
+
+    33.3% {
+        transform: rotate(5deg);
+    }
+
+    66.6% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
 .shape-ani01:hover {
     /* 마우스 호버시 나타나는 색상 */
     color: #b99411;
@@ -213,203 +405,7 @@
     -webkit-mask-size: 200%;
     animation: shine 5s infinite;
 }
-@-webkit-keyframes shine {
-    from {
-        -webkit-mask-position: 150%;
-    }
-    to {
-        -webkit-mask-position: -50%;
-    }
-}
-.shape-wrap-left [class*='shape-'] {
-    position: absolute;
-    display: block;
-    overflow: hidden;
-}
-.shape-wrap-right [class*='shape-'] {
-    position: absolute;
-    display: block;
-    overflow: hidden;
-}
-.shape-ani01 {
-    left: 0;
-    bottom: -5rem;
-    background-color: #f1a33e;
-    width: 6rem;
-    height: 6rem;
-    border-radius: 0 100% 100% 0;
-    animation: random-shape01 3s 2s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
-}
 
-.shape-ani02 {
-    left: 17rem;
-    bottom: -13rem;
-    background-color: hsl(51, 100%, 73%);
-    width: 5rem;
-    height: 14rem;
-    border-radius: 4rem;
-    position: absolute;
-    animation: random-shape02 3s 2s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
-}
-
-.shape-ani03 {
-    left: 0rem;
-    bottom: 2rem;
-    outline: 0.1rem solid rgba(0, 0, 0, 0);
-    background-color: #f9632b;
-    width: 5.2rem;
-    height: 5.2rem;
-    border-radius: 100% 100% 0 100%;
-    -webkit-animation: random-shape03 3s 1s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
-}
-.shape-ani04 {
-    overflow: visible;
-    position: relative;
-    left: 11rem;
-    bottom: -11rem;
-    width: 2.2rem;
-    height: 2.2rem;
-    animation: 3s cubic-bezier(1, -0.015, 0.155, 0.995) 1s infinite alternate none running random-shape04;
-    background-color: rgb(132, 63, 38);
-}
-
-.shape-ani05 {
-    left: 17rem;
-    bottom: -13rem;
-    background-color: hsl(51, 100%, 73%);
-    width: 5rem;
-    height: 14rem;
-    border-radius: 4rem;
-    position: absolute;
-    animation: random-shape02 3s 2s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
-}
-
-@keyframes random-shape {
-    0% {
-        border-radius: 100% 100% 0 100%;
-        transform: rotate(0deg);
-    }
-
-    50% {
-        border-radius: 4rem;
-        transform: rotate(90deg);
-    }
-
-    100% {
-        border-radius: 100%;
-        transform: rotate(180deg);
-    }
-}
-
-@-webkit-keyframes random-shape02 {
-    0% {
-        border-radius: 100%;
-        transform: rotate(0deg);
-    }
-
-    50% {
-        border-radius: 4rem;
-        transform: rotate(90deg);
-    }
-
-    100% {
-        border-radius: 100%;
-        transform: rotate(180deg);
-    }
-}
-
-@keyframes random-shape03 {
-    0% {
-        border-radius: 4rem;
-    }
-
-    50% {
-        border-radius: 0 100% 100% 100%;
-        transform: rotate(90deg);
-    }
-
-    100% {
-        border-radius: 4rem;
-        transform: rotate(180deg);
-    }
-}
-
-@keyframes random-shape04 {
-    0% {
-        border-radius: 100% 100% 0 100%;
-        transform: rotate(0deg);
-    }
-
-    50% {
-        border-radius: 4rem;
-    }
-
-    100% {
-        border-radius: 100%;
-    }
-}
-
-.shape-wrap-right {
-    left: 9rem;
-    position: absolute;
-    top: 8rem;
-}
-.shape-ani06 {
-    left: 76rem;
-    bottom: -12.5rem;
-    background-color: #12485c;
-    width: 10.1rem;
-    height: 10.5rem;
-    border-radius: 9.6rem 9.6rem 0 0;
-    animation: random-shape 3s 1s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
-}
-.shape-ani07 {
-    right: -68rem;
-    bottom: -12rem;
-    background-color: hsl(239, 47%, 53%);
-    width: 5rem;
-    height: 5rem;
-    border-radius: 4rem;
-    animation: random-shape03 3s 1s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
-}
-.shape-ani08 {
-    right: -84.5rem;
-    bottom: -1rem;
-    background-color: hsl(230, 83%, 53%);
-    width: 5rem;
-    height: 14rem;
-    border-radius: 4rem;
-    position: absolute;
-    animation: bounce-shape 2s linear infinite both;
-}
-
-.shape-ani09 {
-    right: -75rem;
-    bottom: -10rem;
-    background-color: hsl(288, 46%, 23%);
-    width: 6rem;
-    height: 6rem;
-    border-radius: 100%;
-    animation: random-shape03 2s linear infinite both;
-}
-
-@keyframes bounce-shape {
-    0% {
-        transform: rotate(0);
-    }
-
-    33.3% {
-        transform: rotate(5deg);
-    }
-
-    66.6% {
-        transform: rotate(-5deg);
-    }
-
-    100% {
-        transform: rotate(0);
-    }
-}
 .shape-ani06:hover {
     /* 마우스 호버시 나타나는 색상 */
     color: hsl(185, 100%, 50%);
@@ -510,50 +506,4 @@
     }
 }
 
-/*
-@-webkit-keyframes hearts {
-    0% {
-        transform: rotate(20deg);
-        opacity: 0;
-    }
-    50% {
-        transform: rotate(-20deg);
-        opacity: 1;
-    }
-    100% {
-        top: 60px;
-        transform: rotate(20deg);
-        opacity: 0;
-    }
-} */
 
-/* #heartShape {
-    #heartShape {
-        position: absolute;
-        width: 30rem;
-        height: 30rem;
-        border-radius: 50% 50% 0 0;
-        transform: rotate(-45deg);
-        transform-origin: 0 100%;
-        transform: rotate(45deg);
-        transform-origin: 100% 100%;
-    }
-    #heartShape:before,
-    #heartShape:after {
-        position: absolute;
-        content: '';
-        left: 30%;
-        top: 0%;
-        width: 20rem;
-        height: 40rem;
-        background: pink;
-        border-radius: 50px 50px 0 0;
-        transform: rotate(-45deg);
-        transform-origin: 0 100%;
-    }
-    #heartShape:after {
-        left: 0;
-        transform: rotate(45deg);
-        transform-origin: 100% 100%;
-    }
-} */

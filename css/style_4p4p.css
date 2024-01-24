@@ -1,71 +1,21 @@
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
 
-/* 레이아웃 - 스크롤 */
-html {
-    height: 100%;
-}
-body {
-    height: 100%;
-    margin: 0;
-    border: 0;
-    padding: 0;
-    overflow: hidden;
-}
-.wrap {
-    position: relative;
-    width: 100%;
-}
-.down {
-    position: fixed;
-    bottom: 0vh;
-    left: calc(50% - 3.2rem);
-    width: 6.4rem;
-    height: 6.4rem;
-    background: url('../img/down.png') center no-repeat;
-    background-size: 4.7rem 4.4rem;
-    -webkit-animation: floating 0.6s ease-out infinite alternate both;
-    animation: floating 0.6s ease-out infinite alternate both;
-    z-index: 1000;
-}
-.container {
-    width: 100%;
-    height: 100vh;
-}
-.container:nth-child(1) {
-    background-color: white;
-}
-.container:nth-child(2) {
-    background-color: white;
-}
-.container:nth-child(3) {
-    background-color: white;
-}
-
 /* 헤더 */
 #header {
-    /* display: block;
-    position: fixed; */
-    z-index: 100;
-    width: 100%;
-    font-size: 2rem;
-    font-weight: 800;
-    /* z-index: 3;
-    left: 0;
-    right: 0; */
-    /* height: 10rem; */
-    /* background-color: #fff; */
     position: fixed;
-    top: 10vh;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+    left: 0;
+    right: 0;
 }
-
 .inner-wrap {
     display: flex;
     justify-content: space-between;
-    /* margin-top: 2%; */
-
+    margin-top: 2%;
+    align-items: center;
     width: 100%;
 }
-
 li {
     float: left;
     margin: 0px 10px 0px;
@@ -78,8 +28,54 @@ li {
 }
 
 /* 메인 */
+.title-cloud {
+    width: 4vw;
+    height: 5vh;
+    object-fit: fill;
+}
+.title-sun {
+    width: 5vw;
+    height: 6vh;
+    object-fit: fill;
+    border-radius: 50%;
+}
 
 /* .sunshine {position: absolute;width: 50px;height: 50px;background: linear-gradient(    120deg,    rgb(240, 215, 72),    yellow,    white,    rgb(240, 215, 72),    yellow,    white,    rgb(240, 215, 72),    yellow,    white,    rgb(240, 215, 72),    yellow,    white); opacity: 0.35; display: inline-block; border-color: yellow; border-radius: 20px 20px 20px 0px;} */
+.content-wrap {
+    position: relative;
+}
+.title {
+    position: relative;
+    /* margin-top: 17vh; */
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    text-align: center;
+}
+.big-tit01 {
+    font-size: 70px;
+    text-decoration: underline;
+    word-spacing: -6px;
+}
+.big-tit02 {
+    font-size: 70px;
+    text-decoration: underline;
+    word-spacing: -5px;
+}
+.big-tit03 {
+    font-size: 35px;
+    word-spacing: -5px; /* title 크기 바뀐만큼 container1 사이즈 조절하기 - 수정된 길이 16.3% */
+    margin-top: 5vh;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: relative;
+}
+.store-wrap {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* margin-top: 13vh; */
+}
 
 .google {
     margin-right: 1vw;
@@ -124,8 +120,6 @@ li {
     color: white;
 }
 
-<<<<<<< HEAD
-=======
 /* 화살표 */
 .downImg {
     width: 5vw;
@@ -137,7 +131,6 @@ li {
     justify-content: center;
 }
 
->>>>>>> dev
 /* ==================================================================================================================================================== */
 
 /* 컨텐츠 - 챌린지 */
@@ -145,8 +138,9 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    background-color: #f2f8ff;
+    max-width: 1536px;
+    margin: 0 auto;
+    /* background-color: #f2f8ff; */
     font-family: Pretendard;
 }
 .chg_cnt .txt_wrap {
@@ -296,45 +290,34 @@ li {
 #fp-nav ul, .fp-slidesNav ul {display: flex; flex-direction: column;}
 
 /* 푸터 */
-container {
-    display: flex;
-    justify-content: space-between;
+.footer_wrap {
+    position: relative;
 }
-.size1 {
-    font-size: 20px;
-    font-family: 'Rubik', sans-serif;
+
+.inner_wrap {max-width: 1536px; margin: 0 auto;}
+
+.footer_link {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: underline;
 }
 
 .top_footer {
+    padding: 0 30px;
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
-.item {
-    /* width: 400px; */
-    /* height: 200px; */
-    /* padding: 70px; */
-    /* margin: 150px; */
-    text-align: center;
-    border-radius: 5%;
-    /* background-color: #f4fcfc; */
+.top_footer .sub_tit {
+    font-size: 30px;
+    line-height: 1.5;
+    font-weight: 700;
+    margin-bottom: 60px;
 }
-.item2 {
-    /* width: 400px; */
-    /* height: 200px; */
-    /* padding: 70px; */
-    /* margin: 150px; */
-    text-align: center;
-    border-radius: 5%;
+.top_footer .sub_tit span{
+    color:#748bff
 }
-<<<<<<< HEAD
-span:not(.txt) {
-=======
-span {
->>>>>>> dev
-    color: #8e9fe3;
-}
-/* not 선택자 추가 */
 
 .line1 {
     text-decoration: underline;
@@ -354,14 +337,8 @@ main {
     width: 100%;
 }
 footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: white;
-    height: auto;
-    width: 100vw;
-    font-family: 'Open Sans';
+    font-family: Pretendard;
+    position: relative;
     padding-top: 30px;
     color: black;
 }
@@ -659,7 +636,6 @@ footer {
     height: 5rem;
     margin-left: 150px;
     border-radius: 100%;
-    position: absolute;
 }
 .round4 {
     left: 0;
@@ -668,7 +644,6 @@ footer {
     width: 10rem;
     height: 5rem;
     border-radius: 0 9.6rem 9.6rem 0;
-    position: absolute;
 }
 .round5 {
     right: 4rem;
@@ -678,7 +653,6 @@ footer {
     height: 5rem;
     margin-left: 300px;
     border-radius: 100%;
-    position: absolute;
 }
 .round6 {
     right: 2rem;
@@ -688,23 +662,7 @@ footer {
     height: 5rem;
     margin-right: 100px;
     border-radius: 4rem;
-    position: absolute;
 }
-<<<<<<< HEAD
-:root {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-    cursor: default;
-    font-family: 'Pretendard', -apple-system, AppleSDGothicNeo, 'Malgun Gothic', Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 62.5%;
-    word-break: keep-all;
-    color: #000;
-}
-=======
 
 .footer_wrap .shape-wrap-right {
     position: absolute;
@@ -791,196 +749,3 @@ footer {
         display:none
     }
 }
-
-/* 챌린지 - 진행중인 챌린지 */
-.swiper {
-    top: 10vh;
-    width: 80vw;
-    height: 30vh;
-    border-radius: 10px;
-  }
-  
-  .swiper-slide {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* padding-left: 10%;
-    padding-right: 10%; */
-  }
-  
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .swiper-scrollbar {
-    color: #fff;
-    background: none;
-  }
-  
-  /* .imging{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-  } */
-  
-  .swiper-pagination-bullet {
-    width: 40px;
-    height: 3px;
-    border-radius: 0;
-    background-color: #fff;
-  }
-  
-  .swiper-pagination-bullet-active {
-    background: #fff;
-    width: 80px;
-  }
-  
-  .swiper-button-next.swiper-button-disabled
-  .swiper-button-prev.swiper-button-disabled{
-    opacity: 0;
-  }
-  
-  .swiper-button-next,.swiper-button-prev {
-    width: 40px;
-    height: 40px;
-    background-color: #F5F5F5;
-    backdrop-filter: blur(3px);
-    background-size: 18px;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 2;
-    border-radius: 50%;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-    position: absolute;
-  
-  }
-  
-  .swiper-button-prev:after,
-  .swiper-rtl .swiper-button-next:after,
-  .swiper-button-next:after,
-  .swiper-rtl .swiper-button-prev:after{
-    display: none;
-  }
-  
-  .swiper-button-next:hover,
-  .swiper-button-prev:hover {
-    background-color: #41c0fc;
-    box-shadow: 0 4px 12px #41c0fc;
-  }
-  
-  .swiper-button-prev{
-    background-image: url(../img/arrow_left.jpg);
-    left: 20px;
-  }
-  
-  .swiper-button-prev:hover{
-    background-image: url(../img/arrow_left_hover.jpg)
-  }
-  
-  .swiper-button-next{
-    background-image: url(../img/arrow_right.jpg);
-    right: 20px;
-  }
-  
-.swiper-button-next:hover{
-    background-image: url(../img/arrow_right_hover.jpg)
-  }
-
-  img{
-    border-radius: 10px;
-  }
-
-/* 챌린지 - 추천 챌린지 */
- .recommand_challenge{
-    position: relative;
-    width: 80.3vw;
-    top: 15vh;
-    left: 10vw;
-    font-family: 'Pretendard JP',Pretendard,system-ui,-apple-system,BlinkMacSystemFont,Roboto,
-    'Helvetica Neue','Segoe UI','Noto Sans KR','Malgun Gothic',sans-serif;
-    overflow: hidden;
-  }
-
-.rec_head{
-    display: flex;
-    justify-content: space-between;
-}
-
-.rec_head_title{
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.rec_more{
-    display: flex;
-}
-
-.rec_more_all{
-    font-size: 15px;
-    color: rgb(133, 133, 133);
-    margin-top: 20px;
-}
-
-.more_left,.more_right{
-    width: 2vw;
-    height: 100%;
-    border: none;
-    background-color: white;
-    color: black;
-    cursor: pointer;
-
-}
-
-.recommand_list{
-    display: flex;
-
-    
-
-}
-  
-.chall_main{
-    margin-top: 5px;
-    width: 15vw;
-    height: 24vh;
-    margin-right: 25px;
-    background-color: grey;
-    border-radius: 10px;
-}
-
-.chall_main img {
-    display: block;
-    width: 100%;
-    height: 100%;
-<<<<<<< HEAD
-    object-fit: cover;
-  }
-
-
-  .chall_expl{
-    height: 5px;
-  }
-=======
-    border-radius: 10px;
-}
-
-.chall_main img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-
-  .chall_expl{
-    height: 5px;
-  }
