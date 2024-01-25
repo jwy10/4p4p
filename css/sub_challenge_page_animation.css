@@ -31,7 +31,7 @@ flex-shrink: 1; */
 
 li {
     float: left;
-    margin: 0vh 2vw 0vh;
+    margin: 0em 1.5em 0em;
 }
 .inner-wrap {
     display: flex;
@@ -43,9 +43,8 @@ li {
 .menu-list {
     float: left;
     list-style-type: none;
-    margin-left: 2em;
     font-size: 0.8em;
-    font-weight: 400;
+    font-weight: 800;
 }
 
 .menu2 {
@@ -61,10 +60,8 @@ li {
     border: 0.2em solid gray;
 }
 
-.logoAndMenu {
-    display: flex;
-    /* width: 33vw; */
-    /* justify-content: space-between; */
+.myPageAndMenu {
+    padding-left: 10vw;
 }
 
 .logo {
@@ -103,10 +100,12 @@ span.light {
     cursor: pointer;
     width: 6vw;
     height: 6vh;
+    line-height: 6vh;
+    vertical-align: middle;
 }
 
 /* -------------------- header 반응형 ----------------------- */
-@media screen and (max-width: 1300px) {
+/* @media screen and (max-width: 1300px) {
     #header {
         line-height: 10vh;
         position: fixed;
@@ -130,12 +129,12 @@ span.light {
     .myPageLogoImege {
         border-radius: 50%;
     }
-}
-@media screen and (max-width: 768px) {
+} */
+@media screen and (max-width: 780px) {
     #header {
         top: 0vh;
         width: 100%;
-        height: 10vw;
+        height: 10vh;
         background-color: #fff;
         display: block;
         line-height: 10vh;
@@ -150,7 +149,7 @@ span.light {
         display: flex;
         justify-content: space-around;
         white-space: nowrap;
-        margin-right: 5em !important;
+        /* margin-right: 5em !important; */
         align-items: center;
     }
 
@@ -158,7 +157,39 @@ span.light {
         display: none;
     }
     .myPageLogoImege {
-        border-radius: 50%;
+        vertical-align: middle;
+        line-height: 10vh;
+    }
+    .button {
+        font-size: 1.5em;
+        font-weight: 900;
+        width: 18em;
+        height: 4em;
+        margin-left: 0.4em;
+        margin: 0.3em 0em;
+        border: 0.3em outset gold;
+    }
+
+    .wrap1_box {
+        margin-top: 3em;
+        width: 65vw;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .shine {
+        font-size: 5em;
+        margin-top: 5em;
+        font-weight: 900;
+        width: 35em;
+        height: 4em;
+        margin-left: 1.5em;
+        /* border-radius: 40px; */
+        border-radius: 40em 0em 40em 0em;
+        line-height: 4em;
+        text-align: center;
+        color: orangered;
+        background: linear-gradient(white, yellow, gold, orange);
     }
 }
 /* ---------------------------page----------------------------- */
@@ -209,6 +240,7 @@ span.light {
     width: 65vw;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .button:hover {
@@ -221,17 +253,20 @@ span.light {
 }
 
 .button {
+   
     font-size: 1.5em;
     font-weight: 900;
-    width: 18em;
-    height: 4em;
+    width: 16em;
+    height: 5em;
     margin-left: 0.4em;
+    margin: 0.3em 0em;
     border: 0.3em outset gold;
-    line-height: 4em;
+    line-height: 5em;
     text-align: center;
     background-color: orange;
     border-radius: 1em;
 }
+
 
 .shine {
     font-size: 1.5em;
@@ -391,7 +426,9 @@ blockquote {
     }
 }
 .recomend_wrap {
-    width: 50vw;
+    margin-top: 10em;
+    padding-left: 30em;
+    padding-right: 30em;
     height: 80%;
     background: linear-gradient(white, orange, white);
     margin-bottom: 20em;
@@ -418,4 +455,67 @@ blockquote {
     border-width: 0.3em;
     border-color: white;
     color: white;
+}
+
+@media screen and (max-width: 1200px) {
+    .recomend_wrap {
+        margin-top: 10em;
+        padding-left: 10em;
+        padding-right: 10em;
+        height: 80%;
+        background: linear-gradient(white, orange, white);
+        margin-bottom: 20em;
+        /* 푸터랑 합칠 시 제거 고려? */
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .recomend_wrap {
+        margin-top: 10em;
+        padding-left: 0em;
+        padding-right: 0em;
+        height: 80%;
+        background: linear-gradient(white, orange, white);
+        margin-bottom: 20em;
+        /* 푸터랑 합칠 시 제거 고려? */
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .recomend_wrap {
+        margin-top: 10em;
+        padding-left: 0em;
+        padding-right: 0em;
+        /* 푸터랑 합칠 시 제거 고려? */
+    }
+
+    #recomend_box {
+        display: flex;
+        justify-content: center;
+        border-radius: 1em;
+    }
+
+    .mornig_activity {
+        width: 6em;
+        height: 3em;
+        background: linear-gradient(orange, black, orange);
+        line-height: 3em;
+        text-align: center;
+        font-weight: 500;
+        font-size: 1em;
+        border-radius: 2em;
+        flex-grow: 0;
+        border-style: double;
+        border-width: 0.2em;
+        border-color: white;
+        color: white;
+        /* margin: 0em -3em 0em; */
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .mornig_activity {
+        font-size: 0.5em;
+        margin: 0em -0.5em 0em;
+    }
 }
