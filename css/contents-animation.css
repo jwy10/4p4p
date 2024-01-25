@@ -128,7 +128,6 @@
     }
 }
 
-
 @-webkit-keyframes shine {
     from {
         -webkit-mask-position: 150%;
@@ -505,5 +504,3 @@
         transform: translateY(-1.5rem) scale(0.8);
     }
 }
-
-
