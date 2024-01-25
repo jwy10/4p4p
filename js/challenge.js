@@ -26,3 +26,19 @@ var swiper2 = new Swiper('.recommand_list',{
     prevEl: '.more_left',
   }
 })
+
+// 출석체크 버튼
+
+function attend_check(){
+  var check = document.getElementById("attend_button")
+  check.style.backgroundColor = "#f0f0f0"
+  check.style.color = "black"
+  check.innerText = "√ 출석 완료"
+}
+
+function caldate_today(){
+  var today = document.getElementById("caldate_today")
+  today.style.backgroundColor = '#FF5C00'
+  today.style.color = "white"
+  today.innerText = "√"
+}
