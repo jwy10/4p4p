@@ -1,0 +1,233 @@
+/* 헤더 구조, 스타일링, 애니메이션 추가 */
+* {
+    text-size-adjust: 100%;
+    cursor: default;
+    font-family: 'Pretendard', -apple-system, AppleSDGothicNeo, 'Malgun Gothic', Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 62.5%;
+    word-break: keep-all;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    /* place-content: stretch flex-start;
+flex-shrink: 1; */
+    box-sizing: content-box;
+    position: fixed;
+    top: 0px;
+    height: 10vh;
+    z-index: 199;
+    width: 100%;
+    text-align: center;
+    line-height: 10vh;
+}
+
+li {
+    float: left;
+    margin: 0vh 2vw 0vh;
+}
+.inner-wrap {
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 2%; */
+    flex-direction: row;
+    margin: 0em 20em 0em 0em;
+}
+
+.menu-list {
+    float: left;
+    list-style-type: none;
+}
+
+.menu2 {
+    margin: 0em -3em 0em;
+}
+
+.myPageLogoImege {
+    border-radius: 100%;
+    object-fit: fill;
+    width: 4.5vw;
+    height: 4.5vh;
+    cursor: pointer;
+}
+
+.logoAndMenu {
+    display: flex;
+    /* width: 33vw; */
+    /* justify-content: space-between; */
+}
+
+.logo {
+    font-size: 1em;
+    font-weight: 800;
+}
+
+span.light {
+    position: relative;
+    display: inline-block;
+
+    &:before {
+        position: absolute;
+        left: 0;
+        top: -10%;
+        width: 100%;
+        height: 120%;
+        background: orange;
+        filter: blur(60px);
+        content: '';
+        opacity: 0;
+        animation: flash 0.5s ease-out alternate infinite;
+    }
+}
+
+@keyframes flash {
+    to {
+        opacity: 0.5;
+    }
+}
+
+.myPage {
+    cursor: pointer;
+    width: 6vw;
+    height: 6vh;
+}
+
+/* -------------------- header 반응형 ----------------------- */
+@media screen and (max-width: 1300px) {
+    #header {
+        line-height: 10vh;
+        position: fixed;
+        display: block;
+    }
+    .inner-wrap {
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        white-space: nowrap;
+        align-items: center;
+        margin-left: 0vw;
+        margin-right: 15vw !important;
+    }
+
+    .menu-list {
+        display: inline;
+        padding: 0;
+        margin: 0;
+    }
+    .myPageLogoImege {
+        border-radius: 50%;
+    }
+}
+@media screen and (max-width: 768px) {
+    #header {
+        top: 0vh;
+        width: 100%;
+        height: 10vw;
+        background-color: #fff;
+        display: block;
+        line-height: 10vh;
+    }
+
+    #header {
+        box-shadow: 0 1.1111111111vw 1.6666666667vw rgba(198, 198, 198, 0.13);
+    }
+
+    .inner-wrap {
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        white-space: nowrap;
+        margin-left: 0vw;
+        margin-right: 15vw !important;
+        align-items: center;
+    }
+
+    li {
+        display: none;
+    }
+    .myPageLogoImege {
+        border-radius: 50%;
+    }
+}
+/* ---------------------------page----------------------------- */
+.main {
+    overflow-y: scroll;
+    margin-left: 13vw;
+    margin-right: 13dvw;
+}
+/* ------------------------sec0 -------------------------- */
+.main_container {
+    position: relative;
+}
+.sec0-miracle_mornig {
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main_img {
+    width: 60vw;
+    height: 60vh;
+    object-fit: fill;
+    border-radius: 3em;
+}
+.challenge_title {
+    font-weight: 700;
+    font-size: 2em;
+    margin-top: 2em;
+}
+
+.wrap1_box {
+    margin-top: 3vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.button:hover {
+    background-color: orangered;
+    opacity: 0.8;
+    border-color: white;
+    color: white;
+    -webkit-box-shadow: 0 3.3333333333vw 8.3333333333vw rgba(116, 139, 255, 0.18);
+    box-shadow: 0 3.3333333333vw 8.3333333333vw rgba(116, 139, 255, 0.18);
+}
+
+.button {
+    font-size: 1.5em;
+    font-weight: 900;
+    width: 7em;
+    height: 3em;
+    margin-left: 0.1em;
+    border: 0.1vw solid orange;
+    line-height: 10vh;
+    text-align: center;
+    background-color: orange;
+    border-radius: 1em;
+}
+
+.confirm {
+    margin-right: 8em;
+}
+.shine {
+    font-size: 1em;
+    font-weight: 700;
+    width: 7em;
+    height: 4em;
+    /* border-radius: 40px; */
+    border-radius: 40px 0px 40px 0px;
+    line-height: 10vh;
+    text-align: center;
+    background: linear-gradient(white, yellow, gold, orange);
+}
+
+.shine:hover {
+    background-color: orangered;
+    opacity: 0.7;
+    border-color: white;
+    color: white;
+    -webkit-box-shadow: 0 3.3333333333vw 8.3333333333vw rgba(116, 139, 255, 0.18);
+    box-shadow: 0 3.3333333333vw 8.3333333333vw rgba(116, 139, 255, 0.18);
+}

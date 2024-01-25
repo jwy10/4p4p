@@ -2,85 +2,104 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>굿모닝 윗미 - 메인</title>
+        
         <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/style.css" />
-        <link rel="stylesheet" href="./css/animation.css" />
         <link
             rel="stylesheet"
             as="style"
             crossorigin
             href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
         />
+        <link rel="stylesheet" href="./css/contents-animation.css" />
+        <link rel="stylesheet" href="./css/title-animation.css" />
+        <link rel="stylesheet" href="./css/title-wrap.css" />
+        <link rel="stylesheet" href="./css/animation.css">
+        <link rel="stylesheet" href="./css/headerAnimation.css">
+        <link rel="stylesheet" href="./css/mediaquery-main1page.css" media="screen">
+        
         <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     </head>
 
     <body>
         <div class="wrap">
-            <div id="fullpage" class="container">
-                <header id="header">
-                    <div class="inner-wrap">
-                        <h1 class="logo">
-                            <a href="./index.html">logo</a>
-                        </h1>
-                        <nav class="menu-wrap">
-                            <h3 class="blind">
-                                <ul class="menu-list">
-                                    <li><a href="" class="txt-about">About</a></li>
-                                    <li><a href="" class="txt-challenge">challenge</a></li>
-                                    <li><a href="" class="txt-profile">Profile</a></li>
-                                </ul>
-                            </h3>
-                        </nav>
+            <div class="down"></div>
+            <header id="header">
+                <div class="inner-wrap">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <span class="light">good morning with me</span> 
+                        </a>
                     </div>
-                </header>
-
-                <div class="title">
-                    <div class="title-wrap">
-                        <div class="big-tit01">
-                            평범했던
-                            <i class="imgSlide"><em class="titleImgSlide"></em></i>
-                            일상이
+                    <nav class="menu-wrap">
+                        <h3 class="blind">
+                            <ul class="menu-list">
+                                <li><a href="" class="txt-about">About</a></li>
+                                <li><a href="" class="txt-challenge">challenge</a></li>
+                                <li><a href="" class="txt-profile">Profile</a></li>
+                            </ul>
+                        </h3>
+                    </nav>
+                </div>
+            </header>
+            <div id="fullpage" class="section">
+                <div class="contents-wrap"> 
+                    <div class="title">
+                        <div class="pc-hide">
+                            <div class="title-wrap">
+                                <div class="big-tit01">
+                                일상 <i class="imgSlide"><em class="titleImgSlide"></em></i>
+                                의 작은 도전
+                                </div>
+                                <div class="big-tit02">해와 함께 눈 뜨는 아침</div>
+                                <div class="big-tit03">당신을 위한 시간을 함께 찾아가는 플랫폼</div>
+                            </div>
                         </div>
-                        <div class="big-tit02">소득이<img class="title-sun" src="/img/title-sun.png" /> 되는 습관</div>
-                        <div class="big-tit03">모든 일상이 소득이 되는 XE2 플랫폼</div>
+                        <div class="store-wrap">
+                            <a href="#" class="btn-google"><span class="txt-google">Google Play</span></a>
+                            <a href="#" class="btn-apple"><span class="txt-app">App Store</span></a>
+                        </div>
                     </div>
                 </div>
-
-                <div class="bottom-wrap">
-                    <div class="anibox-bottom1">
-                        <div class="heartGropting"><div id="sunShape">123123</div></div>
-                    </div>
-                    <div class="anibox-bottom2">2</div>
-                    <div class="anibox-bottom3">3</div>
-                    <div class="anibox-bottom4">4</div>
-                    <div class="anibox-bottom5">5</div>
-                    <div class="anibox-bottom6">6</div>
-                    <div class="anibox-bottom7">7</div>
-                </div>
-
-                <div class="store-wrap">
-                    <a href="https://play.google.com/store/games?device=windows&pli=1">
-                        <div class="google">
-                            <img class="googleImg" src="/img/google-store.png" />
-                            <span class="googletxt">Google Play</span>
+                    <div class="bottom-wrap">
+                        <div class="anibox-bottom1">
+                            <div class="sunGropping">
+                                <div id="sunShape"></div>
+                            </div>
                         </div>
-                    </a>
-                    <a href="https://www.apple.com/kr/app-store/">
-                        <div class="apple">
-                            <img class="appleImg" src="/img/apple-store.png" />
-                            <span class="appletxt">Apple store</span>
-                        </div>
-                    </a>
-                    <div class="downImg">
-                        <img src="/img/down.png" />
                     </div>
-                </div>
+                    <div class="anibox-bottom2">
+                        <img class="bling3" src="/img/blingbling.png" alt=""></img>
+                        <img class="bling1" src="/img/blingbling.png" alt=""></img>
+                        <img class="bling2" src="/img/blingbling.png" alt=""></img>
+                    </div>
+
+                    <div class="pc-hide">
+                        <div class="shape-wrap-left">
+                            <span class="shape-ani01"></span>
+                            <span class="shape-ani02"></span>
+                            <span class="shape-ani03"></span>
+                            <span class="shape-ani04"></span>
+                            <div class="anibox-bottom3"><img class="badgeImg" src="/img/badge.png"></div>
+                            <div class="shape-ani05"></div>
+                        </div> 
+                    </div>
+                    <div class="shape-wrap-right">
+                        <span class="shape-ani06"></span>
+                        <span class="shape-ani07"></span>
+                        <span class="shape-ani08"></span>
+                        <span class="shape-ani09"></span>
+                    </div>
             </div>
+        </div>
+    
+           
+            
             <!-- 여기가 현우형 페이지 -->
-            <div class="container">
+            <div class="section">
                 <div class="chg_cnt">
                     <div class="txt_wrap">
                         <p class="sub_tit"><span>01</span> 일상챌린지</p>
@@ -90,7 +109,7 @@
                         </p>
                     </div>
                     <ul>
-                        <li>
+                        <li class="ani01">
                             <div>
                                 <a href="#none">
                                     <img src="./img/chg_img01.png" alt="" />
@@ -100,7 +119,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li>
+                        <li class="ani02">
                             <div>
                                 <a href="#none">
                                     <img src="./img/chg_img02.png" alt="" />
@@ -110,7 +129,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li>
+                        <li class="ani03">
                             <div>
                                 <a href="#none">
                                     <img src="./img/chg_img03.png" alt="" />
@@ -120,7 +139,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li>
+                        <li class="ani04">
                             <div>
                                 <a href="#none">
                                     <img src="./img/chg_img04.png" alt="" />
@@ -134,8 +153,86 @@
                 </div>
             </div>
             <!-- 여기가 하루 페이지 -->
-            <div class="container"></div>
+            <div class="container">
+                <footer>
+                    <div class="top_footer">
+                        <div class="item">
+                            <h2><b class="size1">굿모닝 윗미</b></h2>
+                            <h2>
+                                <b><span>제휴 및 광고</span> 관련 문의</b>
+                            </h2>
+                            <br />
+                            <br />
+                            <div class="arrow_wrap arrow_wrap01">
+                                <span class="arrow_01"></span>
+                                <span class="arrow_02"></span>
+                                <span class="arrow_03"></span>
+                                <span class="arrow_04"></span>
+                            </div>
+                            <h4 class="line1"><b>service@spreatics.com</b></h4>
+                        </div>
+    
+                        <div class="item2">
+                            <div><b class="size1">굿모닝 윗미</b></div>
+                            <h2>
+                                <b><span>서비스</span> 관련 문의</b>
+                            </h2>
+                            <br />
+                            <br />
+                            <div class="arrow_wrap arrow_wrap02">
+                                <span class="arrow_01"></span>
+                                <span class="arrow_02"></span>
+                                <span class="arrow_03"></span>
+                                <span class="arrow_04"></span>
+                            </div>
+                            <h4 class="line2"><b>https://github.com/jwy10/4p4p.git</b></h4>
+                        </div>
+                    </div>
+                    <br />
+                    <div>
+                        <div class="round1"></div>
+                        <div class="round2"></div>
+                        <div class="round3"></div>
+                        <div class="round4"></div>
+                        <div class="round5"></div>
+                        <div class="round6"></div>
+                    </div>
+                    <div class="footer-content">
+                        <div class="main2">
+                            <p class="logo2"><b>(주)코딩온</b></p>
+                            <p class="logo3">탈퇴하기 이용약관 <b>개인정보 처리약관</b></p>
+                            <div class="underline1"></div>
+                        </div>
+                        <br />
+                        <div class="main3">
+                            <p class="logo4">서울 마포구 숭문4길 6 2024 CodingOn. designed by <span>4p4p</span></p>
+                            <p class="logo5">사업자등록번호 123-45-67890 All rights reserved</p>
+                        </div>
+                        <ul class="socials">
+                            <li>
+                                <a href="https://www.facebook.com/facebook/" target="_blank"
+                                    ><i class="fa fa-facebook"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://kr.linkedin.com/?trk=public_jobs_nav-header-logo" target="_blank"
+                                    ><i class="fa fa-linkedin-square"></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
+                </footer>
+            </div>
         </div>
-        <script src="/js/common.js"></script>
+        <script src="/js/common_4p4p.js"></script>
     </body>
 </html>
