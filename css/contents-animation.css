@@ -36,10 +36,6 @@
     }
 }
 
-.bottom-wrap {
-    /* position: absolute;
-    bottom: 50vh; */
-}
 .anibox-bottom2 {
     background-size: 11.5rem auto;
     animation: scale-shape 5s 1s ease-in-out 1 both;
