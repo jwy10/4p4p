@@ -59,7 +59,6 @@
         box-shadow: 0 1.1111111111vw 1.6666666667vw rgba(198, 198, 198, 0.13);
     }
 
-    /* 어느부분해당인지 모르겠음 */
     .logo:after {
         display: none;
     }
@@ -85,7 +84,6 @@
     }
 
     .logo {
-        /* content: 'good mornig with me'; */
         font-size: 5vw;
         font-weight: 700;
         color: #000;
@@ -156,7 +154,6 @@
         display: none;
     }
 
-    /* .title-wrap 제거함 */
     .contents-wrap {
         padding: 22.2222222222vw 12.2222222222vw;
     }

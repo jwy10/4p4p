@@ -16,8 +16,6 @@ body {
 }
 
 #header {
-    /* place-content: stretch flex-start;
-flex-shrink: 1; */
     box-sizing: content-box;
     position: fixed;
     top: 0px;
@@ -36,7 +34,6 @@ li {
 .inner-wrap {
     display: flex;
     justify-content: space-between;
-    /* margin-top: 2%; */
     flex-direction: row;
 }
 
@@ -104,32 +101,6 @@ span.light {
     vertical-align: middle;
 }
 
-/* -------------------- header 반응형 ----------------------- */
-/* @media screen and (max-width: 1300px) {
-    #header {
-        line-height: 10vh;
-        position: fixed;
-        display: block;
-    }
-    .inner-wrap {
-        width: 100vw;
-        display: flex;
-        justify-content: space-around;
-        white-space: nowrap;
-        align-items: center;
-        margin-left: 0vw;
-        margin-right: 15em;
-    }
-
-    .menu-list {
-        display: inline;
-        padding: 0;
-        margin: 0;
-    }
-    .myPageLogoImege {
-        border-radius: 50%;
-    }
-} */
 @media screen and (max-width: 780px) {
     #header {
         top: 0vh;
@@ -149,7 +120,6 @@ span.light {
         display: flex;
         justify-content: space-around;
         white-space: nowrap;
-        /* margin-right: 5em !important; */
         align-items: center;
     }
 
@@ -184,7 +154,6 @@ span.light {
         width: 35em;
         height: 4em;
         margin-left: 1.5em;
-        /* border-radius: 40px; */
         border-radius: 40em 0em 40em 0em;
         line-height: 4em;
         text-align: center;
@@ -196,13 +165,8 @@ span.light {
 .sub_full_wrap {
     overflow-y: scroll;
     position: relative;
-    /* 자식 선택자에 position: absolute를 주고 위치를 고정시키니
-박스가 위로 올라가서 내용이 잘리는 현상을 막을 수 있었다. */
 }
 /* ------------------------sec0 -------------------------- */
-/* .main_container {
-    position: relative;
-} */
 .sec0-miracle_mornig {
     margin-top: 20vh;
     display: flex;
@@ -219,7 +183,6 @@ span.light {
         linear-gradient(to right, hsla(61, 99%, 69%, 0.745), hsla(314, 96%, 68%, 0.667), hsla(197, 95%, 62%, 0.667));
     background-origin: border-box;
     background-clip: content-box, border-box;
-    /* margin: 10px; */
 }
 .challenge_title {
     text-align: center;
@@ -253,7 +216,6 @@ span.light {
 }
 
 .button {
-   
     font-size: 1.5em;
     font-weight: 900;
     width: 16em;
@@ -314,7 +276,6 @@ hr {
     font-family: Georgia;
     color: gray;
     margin-top: 0.2em;
-    /* margin: -5px 10px 0px -10px; */
 }
 
 .blockquote_wrap:after {
@@ -324,7 +285,6 @@ hr {
     font-size: 3em;
     font-family: Georgia;
     color: gray;
-    /* margin: -5px 10px 0px -10px; */
 }
 .blockquote_wrap {
     background: linear-gradient(orange, #f5d79e, #ebeb91, #c1bfbf, skyblue);

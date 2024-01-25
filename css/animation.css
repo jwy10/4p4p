@@ -1,14 +1,8 @@
-
-.contents-wrap {
-    /* padding-top: 10vh; */
-}
-
 .wrap {
     background: linear-gradient(140deg, hsl(14, 73%, 83%), white, rgb(170, 250, 251), rgb(81, 119, 162));
     width: 100vw;
     height: 100vh;
     position: relative;
     touch-action: none;
-    /* transform: translate3d(0px, 0px, 0px); 화살표 포지션 fixed가 적용되지 않아 주석처리*/
     transition: all 700ms ease 0s;
 }

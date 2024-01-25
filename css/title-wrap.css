@@ -1,24 +1,3 @@
-/* .sunshine {
-    background: linear-gradient(
-        120deg,
-        rgb(240, 215, 72),
-        yellow,
-        white,
-        rgb(240, 215, 72),
-        yellow,
-        white,
-        rgb(240, 215, 72),
-        yellow,
-        white,
-        rgb(240, 215, 72),
-        yellow,
-        white
-    );
-    opacity: 0.35;
-    display: inline-block;
-    border-color: yellow;
-    border-radius: 20px 20px 20px 0px;
-} */
 .contents-wrap {
     position: relative;
     align-items: center;
@@ -26,7 +5,6 @@
     width: 100%;
     justify-content: center;
     top: 12rem;
-    /* height: 100%; */
 }
 .title {
     font-size: 7.9rem;
@@ -62,70 +40,8 @@
     justify-content: center;
     display: flex;
     font-size: 10px;
-    /* 부모요소 폰트 사이즈 지정 */
     position: relative;
     margin-top: 8rem;
-}
-
-.google {
-    margin-right: 1vw;
-    width: 15vw;
-    height: 10vh;
-    border: 0.12em solid;
-    text-align: center;
-    font-size: 2em;
-    font-weight: bold;
-    border-radius: 20px;
-    line-height: 10vh;
-    display: flex;
-    color: black;
-    justify-content: center;
-}
-.googleImg {
-    width: 2.5vw;
-    height: 5vh;
-    position: relative;
-    top: 2.5vh;
-}
-
-.google:hover {
-    background-color: black;
-    color: white;
-}
-.apple {
-    margin-right: 0vw;
-    width: 15vw;
-    height: 10vh;
-    border: 0.12em solid;
-    text-align: center;
-    font-size: 2em;
-    font-weight: bold;
-    border-radius: 20px;
-    line-height: 10vh;
-    display: flex;
-    justify-content: center;
-    color: black;
-}
-.appleImg {
-    width: 2.5vw;
-    height: 4vh;
-    position: relative;
-    top: 1em;
-}
-
-.apple:hover {
-    background-color: black;
-    color: white;
-}
-
-/* 화살표 */
-.downImg {
-    content: '';
-    position: fixed;
-    bottom: -9rem;
-    left: calc(50% - 3.2rem);
-    width: 6.4rem;
-    height: 6.4rem;
 }
 
 .store-wrap [class*='btn-'] {
