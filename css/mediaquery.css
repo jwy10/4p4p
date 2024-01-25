@@ -1,12 +1,10 @@
-/* 반응형 페이지 만들기! */
-
+/* 반응형 */
 @media screen and (max-width: 1680px) {
     #header .inner-wrap {
         max-width: 100%;
         display: flex;
         justify-content: space-between;
     }
-
     .menu-wrap {
         right: 5rem !important;
     }
@@ -20,7 +18,6 @@
         display: flex;
         justify-content: space-between;
     }
-
     .shape-wrap-left,
     .shape-wrap-right {
         transform: scale(0.8);
@@ -50,7 +47,7 @@
     #header {
         top: 0vh;
         width: 100%;
-        height: 15.8333333333vw;
+        /* height: 15.8333333333vw; */
         background-color: #fff;
         display: block;
     }
@@ -212,7 +209,6 @@
         bottom: 0vw;
         right: 0;
         width: 100%;
-        overflow-block: visible;
     }
 
     .shape-wrap-left {
@@ -227,7 +223,6 @@
         bottom: 0vh;
     }
     .shape-ani07 {
-        position: absolute;
         left: 0.7222222222vw;
         bottom: 0;
         outline: 0.1rem solid rgba(0, 0, 0, 0);
@@ -240,7 +235,6 @@
     }
 
     .shape-ani08 {
-        position: absolute;
         left: 68.0555555556vw;
         bottom: 0;
         background-color: #748bff;
