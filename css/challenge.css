@@ -437,6 +437,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: #000;
   /* padding-left: 10%;
   padding-right: 10%; */
 }
@@ -529,7 +530,7 @@ img{
   left: 10vw;
   position: relative;
   width: 79.5vw;
-  height: 40vh;
+  height: 32vh;
   border-radius: 10px;
   background-color: white;
   border-color: rgb(184, 184, 184);
@@ -540,8 +541,8 @@ img{
 }
 
 .attend_ph1{
-  font-size: 18px;
-  padding-top: 30px;
+  font-size: 20px;
+  padding-top: 4vh;
 }
 
 .attend_ph2{
@@ -549,32 +550,77 @@ img{
   /* width: 20vw; */
   justify-content: center;
   /* justify-content: space-between; */
-  padding-top: 5px;
+  padding-top: 1vh;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 23px;
   display: flex;
   
 }
 
 .attend_calday{
-  padding-top: 25px;
+  padding-top: 3.5vh;
   display: flex;
   justify-content: center;
 }
 
-.attend_calday {
+/* .attend_calday {
   display: flex;
-}
+} */
 
 .attend_calday p{
-  padding: 0 40px 40px 0;
+  padding: 0 1.3vw;
 }
 
 .attend_caldate{
   display: flex;
+  /* padding: 10px; */
   justify-content: center;
+
 }
 
+.caldate{
+  text-align: center;
+  background-color: #f0f0f0;
+  width: 2.5vw;
+  height: 5vh;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0.45vw;
+  line-height: 5vh;
+  border-color: #999999;
+  border-style: solid;
+  border-width: 1px;
+}
+
+#caldate_today{
+  text-align: center;
+  background-color: #f0f0f0;
+  width: 2.5vw;
+  height: 5vh;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0.45vw;
+  line-height: 5vh;
+  border-color: #999999;
+  border-style: solid;
+  border-width: 1px;
+}
+
+#attend_button{
+  position: relative;
+  top: 1vh;
+  background-color: rgb(255, 92, 0);
+  border-style: solid;
+  border-width: 0;
+  border-radius: 10px;
+  font-size: 0.9vw;
+  font-weight: 1000;
+  color: white;
+  text-align: center;
+  width: 7vw;
+  line-height: 5.5vh;
+  height: 5.5vh;
+}
 
 /* 챌린지 - 추천 챌린지 */
 .recommand_challenge{
