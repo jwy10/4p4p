@@ -1,0 +1,12 @@
+table {
+    margin-top: 1.5rem;
+    border-top: 0.1rem solid black;
+    border-right: 0.1rem solid black;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    display: table;
+    box-sizing: border-box;
+    text-align: center;
+    border-color: gray;
+}

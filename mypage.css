@@ -1,0 +1,60 @@
+.mypage_a {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    font-weight: bold;
+    font-size: 1.33em;
+    padding-top: 50px;
+    cursor: pointer;
+}
+.top1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+.logo1 {
+    margin-left: 15px;
+    cursor: pointer;
+}
+.box {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.box1 {
+    margin-right: 15px;
+    cursor: pointer;
+}
+.box2 {
+    margin-right: 15px;
+    cursor: pointer;
+}
+.mypage_challenge {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+    padding-left: 300px;
+}
+.challenge_order {
+    cursor: pointer;
+    font-size: 20px;
+}
+.order1 {
+    cursor: pointer;
+}
+.mypage_details {
+    width: 200px;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-left: 100px;
+}
+.detail1 {
+    margin-bottom: 50px;
+    cursor: pointer;
+}
