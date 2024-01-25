@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>화면구조잡기</title>
+        <style>
+            div {
+                border: 1px solid black;
+                box-sizing: border-box;
+            }
+            .wrap {
+                width: 1000px;
+                height: 800px;
+                margin: auto;
+            }
+            .wrap > div {
+                width: 100%;
+            }
+            #header,
+            #footer {
+                height: 20%;
+            }
+
+            #content {
+                height: 60%;
+            }
+
+            #content > div {
+                height: 100%;
+                float: left;
+            }
+            .detail1 {
+                margin-bottom: 80px;
+            }
+            #content_1 {
+                width: 20%;
+            }
+            #content_2 {
+                width: 80%;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div id="header"></div>
+            <div id="content">
+                <div id="content_1">
+                    <div class="detail1">친구 초대</div>
+                    <div class="detail1">자주 묻는 질문</div>
+                    <div class="detail1">1:1 문의</div>
+                    <div class="detail1">설정</div>
+                    <div class="detail1">로그아웃</div>
+                </div>
+                <div id="content_2">챌린지 선택</div>
+            </div>
+            <div id="footer"></div>
+        </div>
+    </body>
+</html>
