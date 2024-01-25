@@ -128,7 +128,84 @@
     }
 }
 
+.shape-ani01:hover {
+    /* 마우스 호버시 나타나는 색상 */
+    color: #b99411;
 
+    /*속도조절 */
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 0.3) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 5s infinite;
+}
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+
+.shape-ani02:hover {
+    /* 마우스 호버시 나타나는 색상 */
+    color: #b99411;
+
+    /*속도조절 */
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 0.3) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 5s infinite;
+}
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+.shape-ani03:hover {
+    /* 마우스 호버시 나타나는 색상 */
+    color: #b99411;
+
+    /*속도조절 */
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 0.3) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 5s infinite;
+}
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+.shape-ani04:hover {
+    /* 마우스 호버시 나타나는 색상 */
+    color: #b99411;
+
+    /*속도조절 */
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 0.3) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 5s infinite;
+}
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+.shape-ani05:hover {
+    /* 마우스 호버시 나타나는 색상 */
+    color: #b99411;
+
+    /*속도조절 */
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 0.3) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 5s infinite;
+}
 @-webkit-keyframes shine {
     from {
         -webkit-mask-position: 150%;
@@ -301,7 +378,7 @@
 
 .shape-ani09 {
     right: 34rem;
-    bottom: -12rem;
+    bottom: -14rem;
     background: linear-gradient(hsl(277, 67%, 60%), #59ceeb);
     width: 8rem;
     height: 12rem;
@@ -326,86 +403,6 @@
         transform: rotate(0);
     }
 }
-
-.shape-ani01:hover {
-    /* 마우스 호버시 나타나는 색상 */
-    color: #b99411;
-
-    /*속도조절 */
-    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 0.3) 70%);
-    -webkit-mask-size: 200%;
-    animation: shine 5s infinite;
-}
-@-webkit-keyframes shine {
-    from {
-        -webkit-mask-position: 150%;
-    }
-    to {
-        -webkit-mask-position: -50%;
-    }
-}
-
-.shape-ani02:hover {
-    /* 마우스 호버시 나타나는 색상 */
-    color: #b99411;
-
-    /*속도조절 */
-    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 0.3) 70%);
-    -webkit-mask-size: 200%;
-    animation: shine 5s infinite;
-}
-@-webkit-keyframes shine {
-    from {
-        -webkit-mask-position: 150%;
-    }
-    to {
-        -webkit-mask-position: -50%;
-    }
-}
-.shape-ani03:hover {
-    /* 마우스 호버시 나타나는 색상 */
-    color: #b99411;
-
-    /*속도조절 */
-    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 0.3) 70%);
-    -webkit-mask-size: 200%;
-    animation: shine 5s infinite;
-}
-@-webkit-keyframes shine {
-    from {
-        -webkit-mask-position: 150%;
-    }
-    to {
-        -webkit-mask-position: -50%;
-    }
-}
-.shape-ani04:hover {
-    /* 마우스 호버시 나타나는 색상 */
-    color: #b99411;
-
-    /*속도조절 */
-    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 0.3) 70%);
-    -webkit-mask-size: 200%;
-    animation: shine 5s infinite;
-}
-@-webkit-keyframes shine {
-    from {
-        -webkit-mask-position: 150%;
-    }
-    to {
-        -webkit-mask-position: -50%;
-    }
-}
-.shape-ani05:hover {
-    /* 마우스 호버시 나타나는 색상 */
-    color: #b99411;
-
-    /*속도조절 */
-    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 0.3) 70%);
-    -webkit-mask-size: 200%;
-    animation: shine 5s infinite;
-}
-
 .shape-ani06:hover {
     /* 마우스 호버시 나타나는 색상 */
     color: hsl(185, 100%, 50%);
@@ -506,4 +503,50 @@
     }
 }
 
+/*
+@-webkit-keyframes hearts {
+    0% {
+        transform: rotate(20deg);
+        opacity: 0;
+    }
+    50% {
+        transform: rotate(-20deg);
+        opacity: 1;
+    }
+    100% {
+        top: 60px;
+        transform: rotate(20deg);
+        opacity: 0;
+    }
+} */
 
+/* #heartShape {
+    #heartShape {
+        position: absolute;
+        width: 30rem;
+        height: 30rem;
+        border-radius: 50% 50% 0 0;
+        transform: rotate(-45deg);
+        transform-origin: 0 100%;
+        transform: rotate(45deg);
+        transform-origin: 100% 100%;
+    }
+    #heartShape:before,
+    #heartShape:after {
+        position: absolute;
+        content: '';
+        left: 30%;
+        top: 0%;
+        width: 20rem;
+        height: 40rem;
+        background: pink;
+        border-radius: 50px 50px 0 0;
+        transform: rotate(-45deg);
+        transform-origin: 0 100%;
+    }
+    #heartShape:after {
+        left: 0;
+        transform: rotate(45deg);
+        transform-origin: 100% 100%;
+    }
+} */
