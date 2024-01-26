@@ -1,7 +1,4 @@
-.anibox-bottom1 {
-    display: flex;
-}
-#sunShape {
+#sun_shape {
     background: linear-gradient(tomato, gold, tomato);
     top: -20vh;
     left: -12vw;
@@ -36,7 +33,7 @@
     }
 }
 
-.anibox-bottom2 {
+.anibox_bottom2 {
     background-size: 11.5rem auto;
     animation: scale-shape 5s 1s ease-in-out 1 both;
     animation-delay: 1s;
@@ -84,7 +81,7 @@
     }
 }
 
-.anibox-bottom3 {
+.anibox_bottom3 {
     width: 7rem;
     height: 7rem;
     border-radius: 100%;
@@ -105,7 +102,7 @@
     bottom: 13em;
 }
 
-.anibox-bottom3::hover {
+.anibox_bottom3::hover {
     color: #b99411;
 
     /*속도조절 */
@@ -145,7 +142,7 @@
     display: block;
     overflow: hidden;
 }
-.shape-ani01 {
+.shape_ani01 {
     left: 0;
     bottom: 1rem;
     background: linear-gradient(#ef9556, yellow, #acf8ac);
@@ -154,7 +151,7 @@
     border-radius: 0 100% 100% 0;
 }
 
-.shape-ani02 {
+.shape_ani02 {
     left: 17rem;
     bottom: -13rem;
     background: linear-gradient(hwb(177 48% 2%), hsl(120, 78%, 71%));
@@ -164,7 +161,7 @@
     animation: random-shape02 3s 2s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
 }
 
-.shape-ani03 {
+.shape_ani03 {
     left: 0rem;
     bottom: 17rem;
     outline: 0.1rem solid rgba(0, 0, 0, 0);
@@ -174,7 +171,7 @@
     border-radius: 100% 100% 0 100%;
     -webkit-animation: random-shape03 3s 1s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
 }
-.shape-ani04 {
+.shape_ani04 {
     left: 11rem;
     bottom: -11rem;
     width: 5.2rem;
@@ -183,7 +180,7 @@
     background: linear-gradient(#fff, #ffff00);
 }
 
-.shape-ani05 {
+.shape_ani05 {
     left: 30rem;
     bottom: -13rem;
     background: linear-gradient(#ffff00, #09e909);
@@ -258,7 +255,7 @@
     }
 }
 
-.shape-ani06 {
+.shape_ani06 {
     right: 1rem;
     bottom: -10.5rem;
     background: linear-gradient(skyblue, blue, navy, black);
@@ -267,7 +264,7 @@
     border-radius: 9.6rem 9.6rem 0 0;
     animation: random-shape 3s 1s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
 }
-.shape-ani07 {
+.shape_ani07 {
     right: 20rem;
     bottom: -7rem;
     background: linear-gradient(blue, skyblue);
@@ -276,7 +273,7 @@
     border-radius: 4rem;
     animation: random-shape03 3s 1s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
 }
-.shape-ani08 {
+.shape_ani08 {
     right: 5.5rem;
     bottom: 8rem;
     background: linear-gradient(lightblue, gray);
@@ -286,7 +283,7 @@
     animation: bounce-shape 2s linear infinite both;
 }
 
-.shape-ani09 {
+.shape_ani09 {
     right: 34rem;
     bottom: -12rem;
     background: linear-gradient(hsl(277, 67%, 60%), #59ceeb);
@@ -314,7 +311,7 @@
     }
 }
 
-.shape-ani01:hover {
+.shape_ani01:hover {
     /* 마우스 호버시 나타나는 색상 */
     color: #b99411;
 
@@ -332,7 +329,7 @@
     }
 }
 
-.shape-ani02:hover {
+.shape_ani02:hover {
     /* 마우스 호버시 나타나는 색상 */
     color: #b99411;
 
@@ -349,7 +346,7 @@
         -webkit-mask-position: -50%;
     }
 }
-.shape-ani03:hover {
+.shape_ani03:hover {
     /* 마우스 호버시 나타나는 색상 */
     color: #b99411;
 
@@ -366,7 +363,7 @@
         -webkit-mask-position: -50%;
     }
 }
-.shape-ani04:hover {
+.shape_ani04:hover {
     /* 마우스 호버시 나타나는 색상 */
     color: #b99411;
 
@@ -383,7 +380,7 @@
         -webkit-mask-position: -50%;
     }
 }
-.shape-ani05:hover {
+.shape_ani05:hover {
     /* 마우스 호버시 나타나는 색상 */
     color: #b99411;
 
@@ -393,7 +390,7 @@
     animation: shine 5s infinite;
 }
 
-.shape-ani06:hover {
+.shape_ani06:hover {
     /* 마우스 호버시 나타나는 색상 */
     color: hsl(185, 100%, 50%);
 
@@ -411,7 +408,7 @@
     }
 }
 
-.shape-ani07:hover {
+.shape_ani07:hover {
     /* 마우스 호버시 나타나는 색상 */
     color: hsl(185, 100%, 50%);
 
@@ -428,7 +425,7 @@
         -webkit-mask-position: -50%;
     }
 }
-.shape-ani08:hover {
+.shape_ani08:hover {
     /* 마우스 호버시 나타나는 색상 */
     color: black;
 
@@ -445,7 +442,7 @@
         -webkit-mask-position: -50%;
     }
 }
-.shape-ani09:hover {
+.shape_ani09:hover {
     /* 마우스 호버시 나타나는 색상 */
     color: navy;
 

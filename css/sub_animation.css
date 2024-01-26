@@ -1,71 +1,38 @@
-
-
-/* ------------------------sec0 -------------------------- */
-.contents-wrap {position: relative; text-align: center; box-flex: 1; -ms-flex: 1; flex: 1; margin: 0 auto; max-width: 110rem;} 
-.sec0-miracle_mornig {margin-top: 20vh; display: flex; flex-direction: column; align-items: center;} 
-.main_img {width: 40em; height: 40em; object-fit: cover; border-radius: 50%; border: 2em solid transparent; background-image: linear-gradient(#444444, #444444),linear-gradient(to right, rgba(252, 254, 98, 0.745), hsla(314, 96%, 68%, 0.667), hsla(197, 95%, 62%, 0.667)); background-origin: border-box; background-clip: content-box, border-box; cursor: pointer;} 
-.challenge_title {text-align: center; font-weight: 700; font-size: 4em; margin-top: 2em; margin-bottom: 2em; display: block;} 
-.miraclemorning_txt {text-decoration: underline; color: black !important; white-space: nowrap;} 
-.wrap1_box {margin-top: 3em; width: 65vw; display: flex; justify-content: center; flex-wrap: wrap;} 
-.button:hover {background-color: #ff4500; opacity: 0.8; border-color: #fff; color: white; box-shadow: 0 3.3333333333vw 8.3333333333vw rgba(116, 139, 255, 0.18); box-shadow: 0 3.3333333333vw 8.3333333333vw rgba(116, 139, 255, 0.18);} 
-.button {font-size: 1.5em; font-weight: 900; width: 16em; height: 5em; margin-left: 0.4em; margin: 0.3em 0em; border: 0.3em outset gold; line-height: 5em; text-align: center; background-color: orange; border-radius: 1em;} 
-.shine {font-size: 1.5em; font-weight: 900; width: 35em; height: 4em; margin-left: 1.5em; border-radius: 40em 0em 40em 0em; line-height: 4em; text-align: center; color: #ff4500; background: linear-gradient(white, yellow, gold, orange);} 
-.shine:hover {background-color: #ff4500; opacity: 0.7; border-color: #fff; color: #fff; box-shadow: 0 3.3333333333vw 8.3333333333vw rgba(116, 139, 255, 0.18); box-shadow: 0 3.3333333333vw 8.3333333333vw rgba(116, 139, 255, 0.18);} 
-
-/* -----------------------sec1----------------------- */
-.sec1 {width: 100vw; height: auto; position: absolute; display: flex; flex-direction: column; justify-content: center; align-items: center;}
-hr {margin-top: 5em; margin: 15em 15em;} 
-.blockquote_wrap:before {content: '\201C'; font-size: 3em; font-family: Georgia; color: gray; margin-top: 0.2em;} 
-.blockquote_wrap:after {display: block; margin-top: 0.5em; content: '\201C'; font-size: 3em; font-family: Georgia; color: gray;} 
-.blockquote_wrap {background: linear-gradient(orange, #f5d79e, #ebeb91, #c1bfbf, skyblue); width: 20em; height: 20em; border-radius: 3em; text-align: center; position: relative; font-weight: 600; font-size: 2em; opacity: 0.8; display: block; clear: both;} 
-blockquote {margin-top: 1em; line-height: 1em;} 
-.guide_wrap {width: 65vw;} 
-.txt {line-height: 2em; font-size: 2em; font-weight: 500;} 
-.subject {margin-top: 2em; font-size: 2.5em; margin-bottom: 1em; font-weight: 900; text-decoration: underline; box-sizing: border-box; text-align: center; line-height: 1.5em;} 
-.proofImg {width: 65vw; height: 50vh; border-radius: 5em; border: 0.3em solid orange;} 
-
-.step1 {font-size: 2.3em; font-weight: 600; margin-top: 1em; margin-bottom: 1em; color: gray;} 
-.step2 {font-size: 2.3em; font-weight: 600; margin-top: 1em; margin-bottom: 1em; color: gray;} 
-
-/* ------------------------animation------------------------ */
-
-.main_img:hover {
-color: #ff4500;
-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 0.3) 70%); 
-mask-size: 200%; animation: shine 5s infinite;
-} 
+/*  */
+.miracle_mornig {margin-top: 20vh; display: flex; flex-direction: column; align-items: center;} 
+.miracle_mornig .main_img {width: 40rem; height: 40rem; object-fit: cover; border-radius: 50%; border: 2em solid transparent; background-image: linear-gradient(#444444, #444444),linear-gradient(to right, rgba(252, 254, 98, 0.745), hsla(314, 96%, 68%, 0.667), hsla(197, 95%, 62%, 0.667)); background-origin: border-box; background-clip: content-box, border-box; cursor: pointer;} 
+.miracle_mornig .main_img:hover {color: #ff4500; mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 0.3) 70%); mask-size: 200%; animation: shine 5s infinite;} 
+.miracle_mornig .challenge_title {margin: 4% 0 2%; font-size: 4rem; font-weight: 700;} 
+.miracle_mornig .miraclemorning_txt {text-decoration: underline;} 
+.miracle_mornig .attend_cnt {margin: 2% 0;}
+.miracle_mornig .btn_wrap {display: flex;}
+.miracle_mornig .button {font-weight: 900; width: 24rem; border: 0.3em outset gold; line-height: 5em; text-align: center; background-color: orange; border-radius: 1em; cursor: pointer;} 
+.miracle_mornig .button:hover {background-color: #ff4500; opacity: 0.8; border-color: #fff; color: #fff; box-shadow: 0 3.3333333333vw 8.3333333333vw rgba(116, 139, 255, 0.18); box-shadow: 0 3.3333333333vw 8.3333333333vw rgba(116, 139, 255, 0.18);} 
+.miracle_mornig .shine {font-size: 1.5em; font-weight: 900; height: 4em; border-radius: 40em 0em 40em 0em; line-height: 4em; text-align: center; color: #ff4500; background: linear-gradient(white, yellow, gold, orange);} 
+.miracle_mornig .shine:hover {background-color: #ff4500; opacity: 0.7; border-color: #fff; color: #fff; box-shadow: 0 3.3333333333vw 8.3333333333vw rgba(116, 139, 255, 0.18); box-shadow: 0 3.3333333333vw 8.3333333333vw rgba(116, 139, 255, 0.18);} 
+.mornig_activity:hover {cursor: pointer; color: #ff4500; mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 0.3) 70%);  mask-size: 200%; animation: shine 5s infinite;} 
 
 @keyframes shine {
-from {mask-position: 150%;} 
-to {mask-position: -50%;} 
+    from {mask-position: 150%;} 
+    to {mask-position: -50%;} 
 }
 
-.mornig_activity:hover {
-cursor: pointer;
-color: #ff4500;
-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 0.3) 70%); 
-mask-size: 200%; animation: shine 5s infinite;
+/*  */
+.miracle_info {display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.miracle_info hr {margin-top: 5em; margin: 15em 15em;} 
+.miracle_info .blockquote_wrap:before {content: '\201C'; font-size: 3em; font-family: Georgia; color: gray; margin-top: 0.2em;} 
+.miracle_info .blockquote_wrap:after {display: block; margin-top: 0.5em; content: '\201C'; font-size: 3em; font-family: Georgia; color: gray;} 
+.miracle_info .blockquote_wrap {background: linear-gradient(orange, #f5d79e, #ebeb91, #c1bfbf, skyblue); border-radius: 3em; text-align: center; position: relative; font-weight: 600; font-size: 2em; opacity: 0.8; display: block; clear: both;} 
+.miracle_info blockquote {margin-top: 1em; line-height: 1em;} 
+.miracle_info .guide_wrap {padding: 0 10%;} 
+.miracle_info .txt {line-height: 2em; font-size: 2em; font-weight: 500;} 
+.miracle_info .subject {margin-top: 2em; font-size: 2.5em; margin-bottom: 1em; font-weight: 900; text-decoration: underline; box-sizing: border-box; text-align: center; line-height: 1.5em;} 
+.miracle_info .proof_img img {width: 100%; border-radius: 5em; border: 0.3em solid orange;} 
+.miracle_info .proof_cnt .sub_tit {font-size: 2.3em; font-weight: 600; margin-top: 1em; margin-bottom: 1em; color: gray;} 
 
-} 
-@keyframes shine {
-from {mask-position: 150%;} 
-to {mask-position: -50%;} 
-}
-
-.recomend_wrap {margin-top: 10em; padding-left: 30em; padding-right: 30em; height: 80%; background: linear-gradient(#fff, #ffa500, #fff); margin-bottom: 20em; /* 푸터랑 합칠 시 제거 고려? */}
-#recomend_box {display: flex; flex-wrap: wrap; justify-content: center; gap: 3em; border-radius: 1em;} 
-.mornig_activity {width: 8em; height: 4em; background: linear-gradient(#ffa500, #000000, #ffa500); line-height: 3.5em; text-align: center; font-weight: 900; border-radius: 3em; flex-grow: 0; border-style: double; border-width: 0.3em; border-color: #fff; color: #fff;} 
-
-@media screen and (max-width: 1200px){
-    .recomend_wrap {
-        margin-top: 10em;
-        padding-left: 10em; 
-        padding-right: 10em; 
-        height: 80%; 
-        background: linear-gradient(#fff, #ffa500, #fff); 
-        margin-bottom: 20em;
-    } 
-}
+.recomend_wrap {padding: 10% 14%; background: linear-gradient(#fff, #ffa500, #fff);}
+.recomend_wrap .recomend_box {display: flex; flex-wrap: wrap; justify-content: space-between; border-radius: 1rem;} 
+.recomend_wrap .mornig_activity {width: 8em; height: 4em; margin-bottom: 2%; background: linear-gradient(#ffa500, #000000, #ffa500); line-height: 3.5em; text-align: center; font-weight: 900; border-radius: 3em; flex-grow: 0; border-style: double; border-width: 0.3em; border-color: #fff; color: #fff;} 
 
 @media screen and (max-width: 780px){
     #header {
@@ -93,36 +60,9 @@ to {mask-position: -50%;}
         vertical-align: middle; 
         line-height: 10vh;
     } 
-    .button {
-        cursor: pointer;
-        font-size: 1.5em; 
-        font-weight: 900; 
-        width: 18em; 
-        height: 4em; 
-        margin-left: 0.4em; 
-        margin: 0.3em 0em; 
-        border: 0.3em outset gold;
-    } 
-    .wrap1_box {
-        margin-top: 3em; 
-        width: 65vw; 
-        display: flex; 
-        justify-content: center; 
-        flex-wrap: wrap;
-    } 
-    .shine {
-        font-size: 5em; 
-        margin-top: 5em; 
-        font-weight: 900; 
-        width: 35em; 
-        height: 4em; 
-        margin-left: 1.5em; 
-        border-radius: 40em 0em 40em 0em; 
-        line-height: 4em; 
-        text-align: center; 
-        color: #ff4500; 
-        background: linear-gradient(#fff #ffff00, #ffd700, #ffa500);
-    } 
+    .btn_wrap {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 580px){
@@ -143,7 +83,7 @@ to {mask-position: -50%;}
         padding-right: 0em; 
     }
 
-    #recomend_box {
+    .recomend_box {
         display: flex; 
         justify-content: center; 
         border-radius: 1em;
@@ -172,5 +112,3 @@ to {mask-position: -50%;}
         margin: 0em -0.5em 0em;
     } 
 }
-
-
