@@ -1,5 +1,5 @@
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
-.content {position: relative; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 100%; height: 100%; max-width: 110rem; margin: 0 auto;}
+.content {position: relative; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 100%; height: 100%; margin: 0 auto;}
 .main_title {background: linear-gradient(140deg, hsl(14, 73%, 83%), #fff, rgb(170, 250, 251), rgb(81, 119, 162)); touch-action: none; transition: all 700ms ease 0s;} 
 .down {position: fixed; bottom: 0vh; left: calc(50% - 3.2rem); width: 6.4rem; height: 6.4rem; background: url('../img/icon_arrow.png') center no-repeat; background-size: 4.7rem 4.4rem; -webkit-animation: floating .6s ease-out infinite alternate both; animation: floating .6s ease-out infinite alternate both; z-index: 1000;} 
 .fp-viewing-2 .down {display: none;}
@@ -97,7 +97,7 @@
 .chg_cnt .txt_wrap .str_tit {display: block; margin-top: 40px; font-size: 6.8rem; line-height: 1.2; letter-spacing: -0.4rem; font-weight: 800;} 
 .chg_cnt .txt_wrap .str_tit span {color: #748bff;} 
 .chg_cnt .txt_wrap .txt_cnt {margin-top: 30px; font-size: 1.8rem; line-height: 1.6; font-weight: 400; color: #666;} 
-.chg_cnt ul {display: flex; flex-wrap: wrap; justify-content: flex-end; width: 50%; transform: translateY(11.8%);} 
+.chg_cnt ul {display: flex; flex-wrap: wrap; justify-content: flex-end; width: 50%; max-width: 700px; transform: translateY(11.8%);} 
 .chg_cnt ul li {position: relative; padding: 4% 4.2% 3.8%; margin: 0 0 0 30px; max-width: 245px; max-height: 328px; border-radius: 20px;} 
 .chg_cnt ul li:nth-child(even) {margin: 80px 0 0 30px;} 
 .chg_cnt ul li:nth-child(1) {background-color: #758aff;} 
@@ -141,6 +141,3 @@
 
 #fp-nav ul li .fp-tooltip {color: #000 !important;}
 .fp-warning, .fp-watermark {display: none;}
-
-
-

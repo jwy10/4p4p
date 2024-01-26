@@ -144,7 +144,7 @@
     display: block;
     overflow: hidden;
 }
-.shape_ani01 {
+.shape-ani01 {
     left: 0;
     bottom: 1rem;
     background: linear-gradient(#ef9556, yellow, #acf8ac);
@@ -153,7 +153,7 @@
     border-radius: 0 100% 100% 0;
 }
 
-.shape_ani02 {
+.shape-ani02 {
     left: 17rem;
     bottom: -13rem;
     background: linear-gradient(hwb(177 48% 2%), hsl(120, 78%, 71%));
@@ -163,7 +163,7 @@
     animation: random-shape02 3s 2s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
 }
 
-.shape_ani03 {
+.shape-ani03 {
     left: 0rem;
     bottom: 17rem;
     outline: 0.1rem solid rgba(0, 0, 0, 0);
@@ -173,7 +173,7 @@
     border-radius: 100% 100% 0 100%;
     -webkit-animation: random-shape03 3s 1s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
 }
-.shape_ani04 {
+.shape-ani04 {
     left: 11rem;
     bottom: -11rem;
     width: 5.2rem;
@@ -182,7 +182,7 @@
     background: linear-gradient(#fff, #ffff00);
 }
 
-.shape_ani05 {
+.shape-ani05 {
     left: 30rem;
     bottom: -13rem;
     background: linear-gradient(#ffff00, #09e909);
@@ -257,7 +257,7 @@
     }
 }
 
-.shape_ani06 {
+.shape-ani06 {
     right: 1rem;
     bottom: -10.5rem;
     background: linear-gradient(skyblue, blue, navy, black);
@@ -266,7 +266,7 @@
     border-radius: 9.6rem 9.6rem 0 0;
     animation: random-shape 3s 1s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
 }
-.shape_ani07 {
+.shape-ani07 {
     right: 20rem;
     bottom: -7rem;
     background: linear-gradient(blue, skyblue);
@@ -275,7 +275,7 @@
     border-radius: 4rem;
     animation: random-shape03 3s 1s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
 }
-.shape_ani08 {
+.shape-ani08 {
     right: 5.5rem;
     bottom: 8rem;
     background: linear-gradient(lightblue, gray);
@@ -313,7 +313,7 @@
     }
 }
 
-.shape_ani01:hover {
+.shape-ani01:hover {
     /* 마우스 호버시 나타나는 색상 */
     color: #b99411;
 
@@ -331,7 +331,7 @@
     }
 }
 
-.shape_ani02:hover {
+.shape-ani02:hover {
     /* 마우스 호버시 나타나는 색상 */
     color: #b99411;
 
@@ -348,7 +348,7 @@
         -webkit-mask-position: -50%;
     }
 }
-.shape_ani03:hover {
+.shape-ani03:hover {
     /* 마우스 호버시 나타나는 색상 */
     color: #b99411;
 
@@ -365,7 +365,7 @@
         -webkit-mask-position: -50%;
     }
 }
-.shape_ani04:hover {
+.shape-ani04:hover {
     /* 마우스 호버시 나타나는 색상 */
     color: #b99411;
 
@@ -382,7 +382,7 @@
         -webkit-mask-position: -50%;
     }
 }
-.shape_ani05:hover {
+.shape-ani05:hover {
     /* 마우스 호버시 나타나는 색상 */
     color: #b99411;
 
@@ -392,7 +392,7 @@
     animation: shine 5s infinite;
 }
 
-.shape_ani06:hover {
+.shape-ani06:hover {
     /* 마우스 호버시 나타나는 색상 */
     color: hsl(185, 100%, 50%);
 
@@ -410,7 +410,7 @@
     }
 }
 
-.shape_ani07:hover {
+.shape-ani07:hover {
     /* 마우스 호버시 나타나는 색상 */
     color: hsl(185, 100%, 50%);
 
@@ -427,7 +427,7 @@
         -webkit-mask-position: -50%;
     }
 }
-.shape_ani08:hover {
+.shape-ani08:hover {
     /* 마우스 호버시 나타나는 색상 */
     color: black;
 
