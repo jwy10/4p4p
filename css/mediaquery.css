@@ -15,11 +15,18 @@
     .shape-wrap-right {
         transform: scale(0.7);
     }
+
+    #sun_shape {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .shppe-wrap-right {
         display: block;
+    }
+    body {
+        height: auto;
     }
 
     .menu-wrap {
@@ -31,6 +38,8 @@
         width: 100%;
         background-color: #fff;
         display: block;
+        height: 10vh;
+        line-height: 10vh;
     }
 
     #header {
@@ -47,8 +56,8 @@
 
     .inner-wrap {
         width: 100%;
-        padding: 0 8.3333333333vw;
-        height: 100%;
+        /* padding: 0 8.3333333333vw; */
+        /* height: 100%; */
     }
 
     .logo {
@@ -62,7 +71,7 @@
     }
 
     .logo {
-        font-size: 5vw;
+        font-size: 1em;
         font-weight: 700;
         color: #000;
         margin-left: 2.2222222222vw;

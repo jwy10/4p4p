@@ -1,7 +1,7 @@
 #sun_shape {
     background: linear-gradient(tomato, gold, tomato);
-    top: -20vh;
-    left: -12vw;
+    top: -35vh;
+    left: -30vw;
     width: 28vw;
     height: 28vw;
     animation-duration: 4s;
@@ -28,13 +28,13 @@
         opacity: 0.5;
     }
     100% {
-        top: -20%;
+        top: -35%;
         opacity: 0.9;
     }
 }
 
 .anibox_bottom2 {
-    background-size: 11.5rem auto;
+    /* background-size: 11.5rem auto; */
     animation: scale-shape 5s 1s ease-in-out 1 both;
     animation-delay: 1s;
     animation-direction: normal;
@@ -44,6 +44,8 @@
     animation-timeline: auto;
     animation-range-start: normal;
     animation-range-end: normal;
+    top: 63vh;
+    left: 0vw;
     position: absolute;
 }
 
