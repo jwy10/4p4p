@@ -33,7 +33,7 @@ function attend_check(){
 }
 
 function caldate_today(){
-  var today = document.getElementById("caldate_today")
+  var today = document.querySelector(".caldate.active")
   today.style.backgroundColor = '#FF5C00'
   today.style.color = "white"
   today.innerText = "√"
