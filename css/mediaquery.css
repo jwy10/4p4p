@@ -1,8 +1,7 @@
 /* 반응형 */
 @media screen and (max-width: 1470px) {
     .inner-wrap {
-        padding-left: 3rem;
-        padding-right: 3rem;
+        padding: 0 3%;
     }
     .shape-wrap-left,
     .shape-wrap-right {
@@ -191,11 +190,11 @@
         display: none;
     }
 
-    .shape_ani06 {
+    .shape-ani06 {
         left: 33vw;
         bottom: 0vh;
     }
-    .shape_ani07 {
+    .shape-ani07 {
         left: 0.7222222222vw;
         bottom: 0;
         outline: 0.1rem solid rgba(0, 0, 0, 0);
@@ -207,7 +206,7 @@
         animation: random-shape04 3s 1s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
     }
 
-    .shape_ani08 {
+    .shape-ani08 {
         left: 68.0555555556vw;
         bottom: 0;
         background-color: #748bff;
@@ -215,7 +214,7 @@
         height: 30.5555555556vw;
         border-radius: 11.1111111111vw;
     }
-    .shape_ani09 {
+    .shape-ani09 {
         bottom: 0vh;
     }
 }
