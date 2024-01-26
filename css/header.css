@@ -1,4 +1,10 @@
 /* 헤더 */
+#header {z-index: 100; width: 100%; font-size: 2rem; font-weight: 800; position: fixed; top: 10vh;} 
+#header .inner-wrap {display: flex; justify-content: space-between; margin: 0 auto; width: 100%; max-width: 1536px; padding: 0 100px;} 
+#header ul {display: flex;}
+#header ul li {margin: 0px 10px 0px;} 
+#header span.light {position: relative; display: inline-block;}
+#header span.light::before {position: absolute; left: 0; top: -10%; width: 100%; height: 120%; background: orange; filter: blur(20px); content: ''; opacity: 0; animation: flash 0.5s ease-out alternate infinite;}
 #header {
     z-index: 100;
     width: 100%;
