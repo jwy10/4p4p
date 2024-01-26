@@ -11,6 +11,8 @@
     font-size: 2rem;
     font-weight: 800;
     position: fixed;
+    top: 0vh;
+    height: 10vh;
     top: 10vh;
 }
 #header .inner-wrap {
