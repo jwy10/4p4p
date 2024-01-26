@@ -50,23 +50,17 @@
         width: 100%;
         /* padding: 0 8.3333333333vw; */
         /* height: 100%; */
+        display: flex;
+        flex-direction: center;
     }
 
-    .logo {
+    .logoImg {
+        width: 13vw;
+        height: 10vh;
+        object-fit: fill;
         line-height: 10vh;
-        display: -webkit-inline-box;
-        display: -ms-inline-flexbox;
-        display: inline-flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-
-    .logo {
-        font-size: 2rem;
-        font-weight: 700;
-        color: #000;
-        margin-left: 2.2222222222vw;
+        top: -6vh;
+        position: absolute;
     }
 
     .txt-google {
@@ -78,17 +72,17 @@
     }
 
     .btn-google {
-        width: 40.1111111111vw !important;
-        height: 12.2777777778vw !important;
-        border-radius: 0.1111111111vw;
+        width: 48vw !important;
+        height: 10vh !important;
+        border-radius: 0.0111111111vw;
         border: 0.5555555556vw solid #111;
         text-align: left;
     }
 
     .btn-apple {
-        width: 40vw !important;
-        height: 12vw !important;
-        border-radius: 0.1111111111vw;
+        width: 48vw !important;
+        height: 10vh !important;
+        border-radius: 0.0111111111vw;
         border: 0.5555555556vw solid #111;
         text-align: left;
     }
@@ -97,7 +91,7 @@
         display: inline-flex;
         flex-direction: column;
         align-items: flex-start;
-        margin-top: 0rem;
+        margin-top: 3rem;
     }
     .store_wrap [class*='btn-']:hover {
         background-color: #000;
@@ -108,12 +102,12 @@
 
     .txt-google {
         padding-left: 8.3333333333vw;
-        font-size: 1.5rem !important;
+        font-size: 1rem !important;
     }
 
     .txt-apple {
         padding-left: 8.3333333333vw;
-        font-size: 1.5rem !important;
+        font-size: 1rem !important;
     }
 
     .btn-google {
@@ -179,8 +173,6 @@
         transform: translate(-50%, -50%) scale(0.3);
     }
 
-   
-
     .shape-wrap-right {
         display: block;
         position: absolute;
@@ -227,5 +219,23 @@
     }
     .shape-ani09 {
         bottom: 0vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logoImg {
+        display: none;
+    }
+    .smallLogo {
+        display: block !important;
+        position: absolute;
+        width: 8rem;
+        height: 8rem;
+        line-height: 8rem;
+        object-fit: contain;
+        top: 50%;
+        /* left: -8vw; */
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
