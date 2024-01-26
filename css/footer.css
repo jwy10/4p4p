@@ -5,8 +5,7 @@
 .top_footer .sub_tit span {color: #748bff;} 
 
 footer {position: relative; padding-top: 30px; color: black;} 
-footer .footer_inner {padding: 0 30px; display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; position: relative; max-width: 110rem; min-height: 33rem; margin: 0 auto;}  
-footer .footer_inner {font-size: 1.6rem; font-weight: 400; line-height: 2.8rem;}
+footer .footer_inner {padding: 0 30px; display: flex; align-items: center; justify-content: center; flex-direction: column; font-size: 1.6rem; font-weight: 400; line-height: 2.8rem; position: relative; max-width: 110rem; min-height: 33rem; margin: 0 auto;}  
 footer .footert-content h5 {font-size: 1.8rem; font-weight: 400; text-transform: capitalize; line-height: 3rem;} 
 
 .main2 {padding: 40px 0; width: 100%; display: flex; justify-content: space-between; position: relative;} 
@@ -15,7 +14,7 @@ footer .footert-content h5 {font-size: 1.8rem; font-weight: 400; text-transform:
 .main3 .info {text-align: left;} 
 .main3 .copyright {text-align: right;} 
 .main2 ul {display: flex; flex-wrap: wrap;}
-.main2 ul li {margin: 0 10px;}
+.main2 ul li {margin: 0 10px 0 0;}
 .main2 .logo2 {left: 10px; position: absolute;} 
 .main2 .logo3 {right: 40px; position: absolute;} 
 .main3 .logo4 {left: 10px; position: absolute;} 
@@ -151,10 +150,18 @@ footer .footert-content h5 {font-size: 1.8rem; font-weight: 400; text-transform:
 }
 
 @media screen and (max-width: 768px){
+    footer {
+        padding-top: 0;
+    }
     .top_footer ul{
         flex-direction: column;
         justify-content: center;
         align-items: baseline;
+        height: auto;
+        padding: 15px 3rem;
+    }
+    .top_footer .sub_tit {
+        margin-bottom: 10px;
     }
     .item2 {
         margin-top: 10.4444444444vw;
@@ -162,5 +169,7 @@ footer .footert-content h5 {font-size: 1.8rem; font-weight: 400; text-transform:
     .main2, 
     .main3 {
         flex-direction: column;
+        padding: 24px 0;
     }
+    .main3 .copyright {text-align: left;} 
 }

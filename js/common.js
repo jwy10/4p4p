@@ -4,6 +4,7 @@ new fullpage('#fullpage', {
   scrollingSpeed: 1000,
   navigation: true,
   scrollOverflow: false,
+  responsiveWidth: 884,
   slidesNavigation: true,
   responsiveHeight: 330,
   dragAndMove: true,
