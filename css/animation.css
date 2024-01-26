@@ -1,14 +1,491 @@
-
-.contents-wrap {
-    /* padding-top: 10vh; */
+#sun_shape {
+    background: linear-gradient(tomato, gold, tomato);
+    top: -20vh;
+    left: -12vw;
+    width: 28vw;
+    height: 28vw;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-name: sunrise;
+    animation-delay: 0s;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0.9;
 }
 
-.wrap {
-    background: linear-gradient(140deg, hsl(14, 73%, 83%), white, rgb(170, 250, 251), rgb(81, 119, 162));
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    touch-action: none;
-    /* transform: translate3d(0px, 0px, 0px); 화살표 포지션 fixed가 적용되지 않아 주석처리*/
-    transition: all 700ms ease 0s;
+@keyframes sunrise {
+    0% {
+        right: 0%;
+        top: -100%;
+        transform: translate3d(1000%, -300%, -50em);
+        opacity: 1;
+    }
+    65% {
+        top: 25%;
+        opacity: 0.5;
+    }
+    100% {
+        top: -20%;
+        opacity: 0.9;
+    }
+}
+
+.anibox_bottom2 {
+    background-size: 11.5rem auto;
+    animation: scale-shape 5s 1s ease-in-out 1 both;
+    animation-delay: 1s;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running;
+    animation-name: scale-shape;
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal;
+    position: absolute;
+}
+
+.bling1 {
+    width: 8vw;
+    height: 14vh;
+    position: absolute;
+    left: 0vw;
+    top: -50vh;
+}
+.bling2 {
+    width: 3vw;
+    height: 5vh;
+    animation: scale-shape 5s 2s ease-in-out 1 both;
+    position: absolute;
+    left: 10vw;
+    top: -42vh;
+}
+.bling3 {
+    width: 5vw;
+    height: 8vh;
+    animation: scale-shape 5s 3s ease-in-out 1 both;
+    position: absolute;
+    left: 10vw;
+    top: -55vh;
+}
+
+@keyframes scale-shape {
+    0% {
+        opacity: 0;
+        transform: translate3d(-30%, -101%, 50em);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.anibox_bottom3 {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100%;
+    justify-content: center;
+    display: flex;
+    background: linear-gradient(#add8e6, #fff);
+    animation: random-shape 3s 1s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
+}
+.badgeImg {
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+}
+
+.shape-wrap-left {
+    position: absolute;
+    left: 0em;
+    bottom: 13em;
+}
+
+.anibox_bottom3::hover {
+    color: #b99411;
+
+    /*속도조절 */
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 0.3) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 5s infinite;
+}
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+.shape-wrap-left [class*='shape-'] {
+    position: absolute;
+    display: block;
+    overflow: hidden;
+}
+.shape-wrap-right {
+    position: absolute;
+    bottom: 13em;
+    right: 0em;
+}
+.shape-wrap-right [class*='shape-'] {
+    position: absolute;
+    display: block;
+    overflow: hidden;
+}
+.shape_ani01 {
+    left: 0;
+    bottom: 1rem;
+    background: linear-gradient(#ef9556, yellow, #acf8ac);
+    width: 15rem;
+    height: 15rem;
+    border-radius: 0 100% 100% 0;
+}
+
+.shape_ani02 {
+    left: 17rem;
+    bottom: -13rem;
+    background: linear-gradient(hwb(177 48% 2%), hsl(120, 78%, 71%));
+    width: 10rem;
+    height: 28rem;
+    border-radius: 4rem;
+    animation: random-shape02 3s 2s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
+}
+
+.shape_ani03 {
+    left: 0rem;
+    bottom: 17rem;
+    outline: 0.1rem solid rgba(0, 0, 0, 0);
+    background: linear-gradient(#ff4500, #ff7f50, #ffc0cb);
+    width: 7.2rem;
+    height: 7.2rem;
+    border-radius: 100% 100% 0 100%;
+    -webkit-animation: random-shape03 3s 1s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
+}
+.shape_ani04 {
+    left: 11rem;
+    bottom: -11rem;
+    width: 5.2rem;
+    height: 5.2rem;
+    animation: 3s cubic-bezier(1, -0.015, 0.155, 0.995) 1s infinite alternate none running random-shape04;
+    background: linear-gradient(#fff, #ffff00);
+}
+
+.shape_ani05 {
+    left: 30rem;
+    bottom: -13rem;
+    background: linear-gradient(#ffff00, #09e909);
+    width: 5rem;
+    height: 14rem;
+    border-radius: 4rem;
+    animation: random-shape02 3s 2s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
+}
+
+@keyframes random-shape {
+    0% {
+        border-radius: 100% 100% 0 100%;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        border-radius: 4rem;
+        transform: rotate(90deg);
+    }
+
+    100% {
+        border-radius: 100%;
+        transform: rotate(180deg);
+    }
+}
+
+@-webkit-keyframes random-shape02 {
+    0% {
+        border-radius: 100%;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        border-radius: 4rem;
+        transform: rotate(90deg);
+    }
+
+    100% {
+        border-radius: 100%;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes random-shape03 {
+    0% {
+        border-radius: 4rem;
+    }
+
+    50% {
+        border-radius: 0 100% 100% 100%;
+        transform: rotate(90deg);
+    }
+
+    100% {
+        border-radius: 4rem;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes random-shape04 {
+    0% {
+        border-radius: 100% 100% 0 100%;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        border-radius: 4rem;
+    }
+
+    100% {
+        border-radius: 100%;
+    }
+}
+
+.shape_ani06 {
+    right: 1rem;
+    bottom: -10.5rem;
+    background: linear-gradient(skyblue, blue, navy, black);
+    width: 17.1rem;
+    height: 17.5rem;
+    border-radius: 9.6rem 9.6rem 0 0;
+    animation: random-shape 3s 1s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
+}
+.shape_ani07 {
+    right: 20rem;
+    bottom: -7rem;
+    background: linear-gradient(blue, skyblue);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 4rem;
+    animation: random-shape03 3s 1s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
+}
+.shape_ani08 {
+    right: 5.5rem;
+    bottom: 8rem;
+    background: linear-gradient(lightblue, gray);
+    width: 7rem;
+    height: 20rem;
+    border-radius: 8rem;
+    animation: bounce-shape 2s linear infinite both;
+}
+
+.shape_ani09 {
+    right: 34rem;
+    bottom: -12rem;
+    background: linear-gradient(hsl(277, 67%, 60%), #59ceeb);
+    width: 8rem;
+    height: 12rem;
+    border-radius: 100%;
+    animation: random-shape03 2s linear infinite both;
+}
+
+@keyframes bounce-shape {
+    0% {
+        transform: rotate(0);
+    }
+
+    33.3% {
+        transform: rotate(5deg);
+    }
+
+    66.6% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.shape_ani01:hover {
+    /* 마우스 호버시 나타나는 색상 */
+    color: #b99411;
+
+    /*속도조절 */
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 0.3) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 5s infinite;
+}
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+
+.shape_ani02:hover {
+    /* 마우스 호버시 나타나는 색상 */
+    color: #b99411;
+
+    /*속도조절 */
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 0.3) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 5s infinite;
+}
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+.shape_ani03:hover {
+    /* 마우스 호버시 나타나는 색상 */
+    color: #b99411;
+
+    /*속도조절 */
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 0.3) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 5s infinite;
+}
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+.shape_ani04:hover {
+    /* 마우스 호버시 나타나는 색상 */
+    color: #b99411;
+
+    /*속도조절 */
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 0.3) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 5s infinite;
+}
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+.shape_ani05:hover {
+    /* 마우스 호버시 나타나는 색상 */
+    color: #b99411;
+
+    /*속도조절 */
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 0.3) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 5s infinite;
+}
+
+.shape_ani06:hover {
+    /* 마우스 호버시 나타나는 색상 */
+    color: hsl(185, 100%, 50%);
+
+    /*속도조절 */
+    mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 9) 70%);
+    mask-size: 200%;
+    animation: shine 5s infinite;
+}
+@keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+
+.shape_ani07:hover {
+    /* 마우스 호버시 나타나는 색상 */
+    color: hsl(185, 100%, 50%);
+
+    /*속도조절 */
+    mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 9) 70%);
+    mask-size: 200%;
+    animation: shine 5s infinite;
+}
+@keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+.shape_ani08:hover {
+    /* 마우스 호버시 나타나는 색상 */
+    color: black;
+
+    /*속도조절 */
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 0.3) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 5s infinite;
+}
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+.shape_ani09:hover {
+    /* 마우스 호버시 나타나는 색상 */
+    color: navy;
+
+    /*속도조절 */
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 0.3) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 5s infinite;
+}
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+
+@keyframes blink-1 {
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+        transform: translateY(-1.5rem) scale(0.8);
+    }
+
+    25%,
+    75% {
+        opacity: 0.6;
+        transform: translateY(1.5rem) scale(2.2);
+    }
+}
+
+@keyframes blink-2 {
+    0%,
+    50%,
+    100% {
+        opacity: 0.6;
+        transform: translateY(1.5rem) scale(2.2);
+    }
+
+    25%,
+    75% {
+        opacity: 1;
+        transform: translateY(-1.5rem) scale(0.8);
+    }
 }

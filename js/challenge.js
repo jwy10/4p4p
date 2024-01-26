@@ -1,5 +1,4 @@
 // 챌린지 상단 ; 내가 신청한 챌린지
-
 var swiper = new Swiper('.swiper', {
   slidesPerView: 3,
   spaceBetween: 10,
@@ -13,8 +12,6 @@ var swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   }
-
-
 });
 
 var swiper2 = new Swiper('.recommand_list',{
@@ -28,7 +25,6 @@ var swiper2 = new Swiper('.recommand_list',{
 })
 
 // 출석체크 버튼
-
 function attend_check(){
   var check = document.getElementById("attend_button")
   check.style.backgroundColor = "#f0f0f0"
