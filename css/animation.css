@@ -1,7 +1,7 @@
 #sun_shape {
     background: linear-gradient(tomato, gold, tomato);
-    top: -20vh;
-    left: -12vw;
+    top: -35vh;
+    left: -11vw;
     width: 28vw;
     height: 28vw;
     animation-duration: 4s;
@@ -28,13 +28,13 @@
         opacity: 0.5;
     }
     100% {
-        top: -20%;
+        top: -35%;
         opacity: 0.9;
     }
 }
 
 .anibox_bottom2 {
-    background-size: 11.5rem auto;
+    /* background-size: 11.5rem auto; */
     animation: scale-shape 5s 1s ease-in-out 1 both;
     animation-delay: 1s;
     animation-direction: normal;
@@ -44,6 +44,8 @@
     animation-timeline: auto;
     animation-range-start: normal;
     animation-range-end: normal;
+    top: 63vh;
+    left: 0vw;
     position: absolute;
 }
 
@@ -100,6 +102,8 @@
     position: absolute;
     left: 0em;
     bottom: 13em;
+    margin: 0rem;
+    padding: 0rem;
 }
 
 .anibox_bottom3::hover {
@@ -143,7 +147,7 @@
     overflow: hidden;
 }
 .shape-ani01 {
-    left: 0;
+    left: -2rem;
     bottom: 1rem;
     background: linear-gradient(#ef9556, yellow, #acf8ac);
     width: 15rem;
@@ -159,6 +163,7 @@
     height: 28rem;
     border-radius: 4rem;
     animation: random-shape02 3s 2s infinite cubic-bezier(1, -0.015, 0.155, 0.995) alternate;
+    opacity: 0.7;
 }
 
 .shape-ani03 {
@@ -291,6 +296,7 @@
     height: 12rem;
     border-radius: 100%;
     animation: random-shape03 2s linear infinite both;
+    position: absolute;
 }
 
 @keyframes bounce-shape {
@@ -488,4 +494,11 @@
         opacity: 1;
         transform: translateY(-1.5rem) scale(0.8);
     }
+}
+
+.contents-wrap {
+    display: block;
+    margin-top: 5vh;
+    margin-left: 0;
+    padding: 0;
 }
