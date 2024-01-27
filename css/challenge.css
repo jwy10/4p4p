@@ -1,0 +1,64 @@
+
+.challenges {position: relative; padding: 15% 4% 5%; max-width: 1536px; margin: 0 auto; width: 100%;}
+.challenges img {display: block; width: 100%;}
+.challenges .swiper-slide {width: 100%; height: 100%; text-align: center; font-size: 18px; display: flex; justify-content: center; align-items: center; border: #000;} 
+.challenges .swiper-slide img {width: 100%; height: 100%; border-radius: 15px;} 
+.challenges .swiper-scrollbar {color: #fff; background: none;} 
+.challenges .swiper-pagination-bullet {width: 40px; height: 3px; border-radius: 0;} 
+.challenges .swiper-pagination-bullet-active {width: 80px;} 
+.challenges .swiper-button-next.swiper-button-disabled,
+.challenges .swiper-button-prev.swiper-button-disabled {opacity: 0;} 
+.challenges .swiper-button-next,
+.challenges .swiper-button-prev {width: 40px; height: 40px; background-color: #F5F5F5; backdrop-filter: blur(3px); background-size: 18px; background-position: center; background-repeat: no-repeat; z-index: 2; border-radius: 50%; -webkit-transition: 0.4s; transition: 0.4s; position: absolute;} 
+.challenges .swiper-button-prev:after,
+.challenges .swiper-rtl .swiper-button-next:after,
+.challenges .swiper-button-next:after,
+.challenges .swiper-rtl .swiper-button-prev:after {display: none;} 
+.challenges .swiper-button-next:hover,
+.challenges .swiper-button-prev:hover {background-color: #41c0fc; box-shadow: 0 4px 12px #41c0fc;} 
+.challenges .swiper-button-prev {background-image: url('../img/arrow_left.jpg'); left: 10px;} 
+.challenges .swiper-button-prev:hover {background-image: url('../img/arrow_hover01.jpg')}
+.challenges .swiper-button-next {background-image: url('../img/arrow_right.jpg'); right: 10px;} 
+.challenges .swiper-button-next:hover {background-image: url('../img/arrow_hover02.jpg')}
+
+/* 출석체크 */
+.challenges .attend {position: relative; margin: 4% 0; padding: 4% 20%; border-radius: 10px; border-color: rgb(184, 184, 184); border-width: 1px; border-style: solid; text-align: center;} 
+.challenges .attend_ph1 {font-size: 20px;} 
+.challenges .attend_ph2 {display: flex; justify-content: center; padding-top: 1vh; font-weight: bold; font-size: 23px;}
+.challenges .attend_cntwrap {margin: 4% 0; font-size: 2rem;}
+.challenges .attend_calday {display: flex; justify-content: space-around;} 
+.challenges .attend_caldate {display: flex; justify-content: space-around; flex-wrap: wrap;}
+.challenges .caldate {background-color: #f0f0f0; border-radius: 50%; width: 5.553%; min-width: 50px; text-align: center; margin: 0.45vw; line-height: 5rem; border-color: #999999; border-style: solid;} 
+.challenges #caldate_today {text-align: center; background-color: #f0f0f0; width: 2.5vw; height: 5vh; border-radius: 50%; text-align: center; margin: 0.45vw; line-height: 5vh; border-color: #999999; border-style: solid; border-width: 1px;} 
+.challenges #attend_button {position: relative; background-color: rgb(255, 92, 0); border-style: solid; border-width: 0; border-radius: 10px; font-weight: 1000; color: #fff; text-align: center; width: 100%; padding: 3%; max-width: 300px; cursor: pointer;} 
+
+/* 추천 챌린지 */
+.recommand_challenge {position: relative; margin-bottom: 15px;} 
+.recommand_challenge .rec_head {display: flex; justify-content: space-between; margin: 20px 0;} 
+.recommand_challenge .rec_head_title {font-size: 30px; font-weight: bold;} 
+.recommand_challenge .rec_more {display: flex; align-items: center; cursor: pointer;} 
+.recommand_challenge .rec_more_all {font-size: 15px; color: rgb(133, 133, 133); font-weight: bold;} 
+.recommand_challenge .more_left,
+.recommand_challenge .more_right {font-size: 20px; font-weight: bold; border: none; cursor: pointer; background: transparent;} 
+.recommand_challenge .recommand_list {display: flex; justify-content: space-between; flex-wrap: wrap;} 
+.recommand_challenge .recommand_list li {width: 24%;}
+.recommand_challenge .recommand_list img {display: block; margin-bottom: 5%; width: 100%; min-height: 160px; border-radius: 15px;}
+.recommand_challenge .recommand_list li .chall_title {font-size: 2.4rem;}
+.recommand_challenge .recommand_list li p {padding-top: 2%; font-size: 1.4rem; color: grey;}
+
+@media screen and (max-width: 768px) {
+    .challenges {
+        padding-top: 30%;
+    }
+    .recommand_challenge .rec_head {
+        flex-direction: column;
+    }
+    .recommand_challenge .rec_more {
+        justify-content: flex-end;
+        margin-top: 3%;
+    }
+    .recommand_challenge .recommand_list li {
+        width: 100%;
+        margin-bottom: 4%;
+    }
+}
